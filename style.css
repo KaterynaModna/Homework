@@ -1,0 +1,35 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+background-color: #efefef;
+}
+
+    body {
+        font-size: 14pt;
+        margin: auto;
+        background-color: #ffffff;
+        margin-left: 70px;
+        margin-right: 580px;
+      }
+img {
+    border-radius: 5%;
+    width: 150px;
+    float: left;
+    margin:auto;
+}
+
+h1 {
+    
+    padding-top: 40px;
+    text-indent: 40px;
+}
+
+h3 {
+   
+    padding-bottom: 50px; 
+    padding-top: -40px;
+    text-indent: 40px;
+}
+
+h4{
+    text-indent: 40px;
+}
