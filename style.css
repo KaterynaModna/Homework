@@ -1,4 +1,12 @@
 html {
     scroll-behavior: smooth;
+    background-color: rgb(194, 194, 194);
           }
-          
+        .conteiner
+        {
+            width: 600px; /* Задайте ширину контейнера по своему усмотрению */
+            margin: auto;
+            padding: 20px;
+            background-color: azure;
+        }
+        
