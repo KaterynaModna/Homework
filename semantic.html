@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Семантика</title>
+</head>
+<body>
+    <header>
+    <h1>HTML5 Семантичні елементи</h1>
+</header>
+<p>Семантичний елемент чітко описує його значення як для браузера, так і
+    для розробника.</p>
+    <p>Приклади не семантичних елементів: &lt;div&gt; і &lt;span&gt; - нічого не говорить про його вміст.</p>
+    <p>Приклади семантичних елементів: &lt;form&gt; &lt;table&gt; і &lt;article&gt; - чітко
+        визначає його зміст.</p>
+        <article>
+            <section class="browse">
+                <h2>Підтримка браузерів</h2>
+                <table>
+                    <tr>
+                        <td><img src="google.png" width="50" height="50" alt="Google Chrome"></td>
+                        <td><img src="explorer.png" width="50" height="50" alt="Internet Explorer"></td>
+                        <td><img src="firefox.png" width="50" height="50" alt="Mozila Firefox"></td>
+                        <td><img src="safari.png" width="50" height="50" alt="Safari"></td>
+                        <td><img src="opera.png" width="50" height="50" alt="Opera"></td>
+                    </tr>
+                </table>
+                <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+                <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі
+                    елементи".</p>
+                    <p>Прочитайте про це в <a href="https://www.blogger.com/blog/page/edit/2590532390801722394/850003172824707311#">підтримці браузера HTML5</a></p>
+            </section> 
+            <section class="new_sem">
+                <h2>Нові семантичні елементи в HTML5</h2>
+                <p>HTML5 пропонує нові семантичні елементи для визначення різних частин
+                    веб-сторінки:</p>
+                    <ul>
+                        <li>
+                            &lt;section&gt;
+                        </li>
+                        <li>
+                            &lt;article&gt;
+                        </li>
+                        <li>
+                            &lt;header&gt;
+                        </li>
+                        <li>
+                            &lt;footer&gt;
+                        </li>
+                    </ul>
+            </section>
+            <section class="sec">
+                <h2>HTML5 &lt;section&gt; елемент</h2>
+                <p>Елемент &lt;section&gt; визначає розділ в документі</p>
+                <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою
+                    тематичну угруповання контенту, зазвичай з заголовком".
+                    </p>
+                    <p>Домашня сторінка зазвичай може бути розділена на розділи для
+                        ознайомлення, змісту і контактної інформації</p>
+                       <div class="code">
+                        <code>&lt;section&gt;
+                           <p>&lt;h1&gt;WWF&lt;/h1&gt;</p>
+                           <p>&lt;p&gt; The world Wide Fund for Nature (WWF) is...&lt;/p&gt;</p>
+                           <p>&lt;/section&gt;</p>
+                        </code>
+                    </div>
+            </section>
+            <section class="artcl">
+            <h2>HTML5 &lt;article&gt; елемент</h2>
+            <p>Елемент &lt;article&gt; визначає незалежний, автономний вміст.</p>
+            <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+                читати його незалежно від іншої частини веб-сайту.</p>
+                <p>Приклади того, де можна використовувати елемент &lt;article&gt;:</p>
+                <ul>
+                    <li>
+                        Повідомлення на форумі 
+                    </li>
+                    <li>
+                       блозі 
+                    </li>
+                    <li>
+                        Газетна стаття
+                    </li>
+                </ul>
+                <div class="code">
+                    <code>&lt;article&gt;
+                       <p>&lt;h1&gt;What Does WWF Do?&lt;/h1&gt;</p>
+                       <p>&lt;p&gt;WWW's mission is to stop the degradation of our planet's natural envivonment,
+                        and build a future in which humans live in harmony with nature.&lt;/p&gt;</p>
+                       <p>&lt;/article&gt;</p>
+                    </code>
+                </div>
+        </section>
+        <section class="hdr">
+        <h2>HTML5 &lt;header&gt; елемент</h2>
+        <p>Елемент &lt;header&gt; задає заголовок для документа або розділу.</p>
+        <p>Елемент &lt;header&gt; повинен використовуватися в якості контейнера для
+            вступного змісту.</p> 
+         <p>В одному документі може бути кілька елементів &lt;header&gt;.</p>
+         <p>У наступному прикладі визначається заголовок для статті:</p>
+         <div class="code">
+            <code>&lt;article&gt;
+                <p>&lt;header&gt;</p>
+               <p>&lt;h1&gt;What Does WWF Do?&lt;/h1&gt;</p>
+               <p>&lt;p&gt;WWW's mission:&lt;/p&gt;</p>
+               <p>&lt;p&gt;WWW's mission is to stop the degradation of our planet's natural envivonment,
+                and build a future in which humans live in harmony with nature.&lt;/p&gt;</p>
+               <p>&lt;/article&gt;</p>
+            </code>
+        </div>    
+        </section>
+        <section class="ftr">
+            <h2>HTML5 &lt;footer&gt; елемент</h2>
+            <p>Елемент &lt;footer&gt; вказує нижній колонтитул для документа або розділу.</p>
+            <p>Нижній колонтитул зазвичай містить автора документа, інформацію про
+                авторське право, посилання на умови використання, контактні дані і т.д.</p>
+                <p>В одному документі може бути кілька елементів &lt;footer&gt;</p>
+                <code>&lt;footer&gt;
+                   <p>&lt;p&gt;Posted by: Hege Refsnes&lt;/p&gt;</p>
+                   <p>&lt;p&gt;Contact information: &lt;a href="mailto:someone@html5css.ru"&gt;mailto:someone@html5css.ru&lt;/a&gt;&lt;/p&gt;</p>
+                   <p>&lt;/footer&gt;</p>
+                </code>
+        </section>
+        </article>
+</body>
+</html>
