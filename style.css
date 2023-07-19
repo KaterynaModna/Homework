@@ -2,11 +2,24 @@ html {
     scroll-behavior: smooth;
     background-color: rgb(194, 194, 194);
           }
-        .conteiner
-        {
-            width: 600px; /* Задайте ширину контейнера по своему усмотрению */
+        .conteiner {
+            width: 600px; 
             margin: auto;
             padding: 20px;
             background-color: azure;
         }
+        .code {
+            margin: 2;
+            padding: 1;
         
+            background-color: #e3e3e3;
+            color: #000000;
+        }
+        pre {
+        
+            background-color: #ffffff ;
+            color: #000000;
+            border-left: #24ab3b 3px solid;
+            overflow-x: scroll;
+            line-height: 1;
+        }
