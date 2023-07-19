@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5 Семантика</title>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <header>
@@ -14,8 +15,18 @@
     <p>Приклади не семантичних елементів: &lt;div&gt; і &lt;span&gt; - нічого не говорить про його вміст.</p>
     <p>Приклади семантичних елементів: &lt;form&gt; &lt;table&gt; і &lt;article&gt; - чітко
         визначає його зміст.</p>
+        <nav class="menu">
+        <ul>
+            <li><a href="semantic.html#browse">Підтримка браузерів</a></li>
+            <li><a href="semantic.html#new_sem">Нові семантичні елементи</a></li>
+            <li><a href="semantic.html#sec">&lt;section&gt;</a></li>
+            <li><a href="semantic.html#artcl">&lt;article&gt;</a></li>
+            <li><a href="semantic.html#hdr">&lt;header&gt;</a></li>
+            <li><a href="semantic.html#ftr">&lt;footer&gt;</a></li>
+          </ul>
+        </nav>
         <article>
-            <section class="browse">
+            <section id="browse">
                 <h2>Підтримка браузерів</h2>
                 <table>
                     <tr>
@@ -31,7 +42,7 @@
                     елементи".</p>
                     <p>Прочитайте про це в <a href="https://www.blogger.com/blog/page/edit/2590532390801722394/850003172824707311#">підтримці браузера HTML5</a></p>
             </section> 
-            <section class="new_sem">
+            <section id="new_sem">
                 <h2>Нові семантичні елементи в HTML5</h2>
                 <p>HTML5 пропонує нові семантичні елементи для визначення різних частин
                     веб-сторінки:</p>
@@ -50,7 +61,7 @@
                         </li>
                     </ul>
             </section>
-            <section class="sec">
+            <section id="sec">
                 <h2>HTML5 &lt;section&gt; елемент</h2>
                 <p>Елемент &lt;section&gt; визначає розділ в документі</p>
                 <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою
@@ -66,7 +77,7 @@
                         </code>
                     </div>
             </section>
-            <section class="artcl">
+            <section id="artcl">
             <h2>HTML5 &lt;article&gt; елемент</h2>
             <p>Елемент &lt;article&gt; визначає незалежний, автономний вміст.</p>
             <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість
@@ -92,7 +103,7 @@
                     </code>
                 </div>
         </section>
-        <section class="hdr">
+        <section id="hdr">
         <h2>HTML5 &lt;header&gt; елемент</h2>
         <p>Елемент &lt;header&gt; задає заголовок для документа або розділу.</p>
         <p>Елемент &lt;header&gt; повинен використовуватися в якості контейнера для
@@ -110,17 +121,19 @@
             </code>
         </div>    
         </section>
-        <section class="ftr">
+        <section id="ftr">
             <h2>HTML5 &lt;footer&gt; елемент</h2>
             <p>Елемент &lt;footer&gt; вказує нижній колонтитул для документа або розділу.</p>
             <p>Нижній колонтитул зазвичай містить автора документа, інформацію про
                 авторське право, посилання на умови використання, контактні дані і т.д.</p>
                 <p>В одному документі може бути кілька елементів &lt;footer&gt;</p>
+                <div class="code">
                 <code>&lt;footer&gt;
                    <p>&lt;p&gt;Posted by: Hege Refsnes&lt;/p&gt;</p>
                    <p>&lt;p&gt;Contact information: &lt;a href="mailto:someone@html5css.ru"&gt;mailto:someone@html5css.ru&lt;/a&gt;&lt;/p&gt;</p>
                    <p>&lt;/footer&gt;</p>
                 </code>
+            </div>
         </section>
         </article>
 </body>
