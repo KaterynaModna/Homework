@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <div class="conteiner">
@@ -12,22 +13,23 @@
     <input type="text" name="name" id="student_name" maxlength="25" required>
 
     <label for="student_email">Email:</label>
-    <input type="email" name="email" id="student_email" value="">
+    <input type="email" name="email" id="student_email" value="" required>
 
     <label for="student_password">Password:</label>
-    <input type="password" name="password" id="student_password">
+    <input type="password" name="password" id="student_password" required>
 
-    <label for="student_password_2">Repeat the password:</label>
-    <input type="password" name="password_2" id="student_password_2" value="">
+    <label for="student_password_2">Confirm password:</label>
+    <input type="password" name="password_2" id="student_password_2" value="" required>
 
-    <h2>Gender:</h2> <!-- radio_button -->
+    <h4>Gender:</h4> <!-- radio_button -->
             <label for="client-payment-cash">Woman</label>
             <input type="radio" name="sex" id="sex_w" value="woman" checked>
 
             <label for="client-payment-card">Man</label>
             <input type="radio" name="sex" id="sex_m" value="Man">
     
-    
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" maxlength="2" required>
             <!-- select_list -->
     <label for="kurses">Course:</label>
     <select name="kurses" id="kurses">
@@ -39,7 +41,7 @@
 
 
             <!-- textarea_country -->
-            <textarea name="country" id="textarea_country" cols="30" rows="10" placeholder="Country, region, city/village, street"></textarea>
+            <textarea name="country" id="textarea_country"  placeholder="Country, region, city/village, street"></textarea>
 
             <!-- checkbox -->
           
