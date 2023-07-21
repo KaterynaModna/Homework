@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="conteiner">
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="get" id="m_form">
+        <h2> Main form for all student </h2>
+    <label for="student_name">Full name:</label>
+    <input type="text" name="name" id="student_name" maxlength="25" required>
+
+    <label for="student_email">Email:</label>
+    <input type="email" name="email" id="student_email" value="" required>
+
+    <label for="student_password">Password:</label>
+    <input type="password" name="password" id="student_password" required>
+
+    <label for="student_password_2">Confirm password:</label>
+    <input type="password" name="password_2" id="student_password_2" value="" required>
+
+    <h4>Gender:</h4> <!-- radio_button -->
+            <label for="client-payment-cash">Woman</label>
+            <input type="radio" name="sex" id="sex_w" value="woman" checked>
+
+            <label for="client-payment-card">Man</label>
+            <input type="radio" name="sex" id="sex_m" value="Man">
+    
+            <label for="age">Age:</label>
+            <input type="text" name="age" id="age" maxlength="2" required>
+            <!-- select_list -->
+    <label for="kurses">Course:</label>
+    <select name="kurses" id="kurses">
+        <option value="1">Front-End</option>
+        <option value="2">Back-End</option>
+        <option value="3" disabled>Project Management</option>
+        <option value="4" hidden>QA Manual</option>
+    </select>
+
+
+            <!-- textarea_country -->
+            <textarea name="country" id="textarea_country"  placeholder="Country, region, city/village, street" required></textarea>
+
+            <!-- checkbox -->
+          
+            <label for="data" required>I agree to the processing of personal data:</label>
+            <input type="checkbox" name="data" id="data" value="data" checked>
+
+    <button type="submit" id="sign_up">
+    <img src="https://w7.pngwing.com/pngs/493/195/png-transparent-beetroot-computer-icons-sugar-beet-vegetable-love-leaf-heart-thumbnail.png"
+    width="20">
+      Sign up
+    </button>
+    <input type="reset" id="reset" value="Reset">
+    </form>
+
+<!-- newform -->
+
+   <form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="get" id="optional_form">
+    <h2> Optional form: </h2>
+
+    <label for="color">Which color suits our company the most:</label>
+    <input type="color" name="color" id="color">
+
+    <label for="date">Choose the date for meeting:</label>
+    <input type="date" name="date_time" id="date_time"  value="2023-07-22" min="2023-07-22" max="2023-08-22">
+
+    <label for="appt">Choose a time for your meeting:</label>
+     <input type="time" id="appt" name="appt"
+       min="09:00" max="18:00">
+     <small>if you are in Ukraine</small>
+
+    <label for="meeting_time">Choose a time for our meeting:</label>
+    <input type="datetime_local" id="meeting_time"
+       name="meeting_time" value="2018-06-12T19:30"
+       min="2018-06-07T00:00" max="2018-06-14T00:00">
+       <small>if you are <b>NOT</b> in Ukraine</small>
+
+
+    <label for="week">Choose a week when the lessons start:</label>
+    <input type="week" name="week_time" id="week_time" min="2023-W18" max="2023-W26" >
+
+    <label for="photo">Add your photo:</label>
+    <input type="file"
+       id="photo" name="photo"
+       accept="image/png, image/jpeg">
+
+    <label for="url"> You can enter an https:// URL if need:</label>
+    <input type="url" name="url" id="url"
+       placeholder="https://example.com"
+       pattern="https://.*" size="30"
+       >
+
+    <label for="group">How many members do you want in your group?:</label>
+    <input type="number" id="group" name="group"
+       min="1" max="18">
+
+       <label for="comment">Do you like this forms?</label>
+        <input type="range" id="comment" name="comment"
+         min="0" max="10">
+
+    <label for="site-search">Search the site:</label>
+    <input type="search" id="site-search" name="q">
+     <button>Search</button>
+
+    <button type="submit" id="submit">
+        <img src="https://w7.pngwing.com/pngs/493/195/png-transparent-beetroot-computer-icons-sugar-beet-vegetable-love-leaf-heart-thumbnail.png"
+        width="20">
+          Sign up
+        </button>
+        <input type="reset" id="re_set" value="Reset">
+
+        
+
+   </form>
+</div>
+</body>
+</html>
