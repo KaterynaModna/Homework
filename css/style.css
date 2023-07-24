@@ -1,6 +1,32 @@
-.nav_ul{
-    text-transform: capitalize;
-}
+
 header {
-background-color: #fff;
+       background-color: #fff;
+}
+
+.container {
+    margin:0 auto;
+    width: 90%;
+    max-width: 944px;
+}
+.nav_l{
+    color: #828282;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 25px 20px;
+    text-shadow: #000 1px 1px 25px;
+    
+}
+
+.nav_ul{
+    font-size: 0;
+    
+}
+.up_nav{
+    border-bottom: #828282 1px solid;
+    text-align: center;
+}
+.nav_l.active{
+    color: #000;
 }

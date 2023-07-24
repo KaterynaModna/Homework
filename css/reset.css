@@ -2,3 +2,9 @@
     margin: 0;
     padding: 0;
 }
+html, body{
+    font-family: 'Open Sans', sans-serif;
+}
+ul, ol{
+    list-style-type: none;
+}
