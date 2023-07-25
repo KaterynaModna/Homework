@@ -23,5 +23,9 @@ body{
     padding: 20px;
 }
 .container.active{
-    background-color: bisque;
+    background-color: #88839E;
+    width: 535px;
+}
+.container.active:nth-child(2n){
+    background-color: #7A7593;;
 }
