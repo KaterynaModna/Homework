@@ -1,0 +1,27 @@
+*{
+font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: #484F4E;
+    color: #C48782;
+    padding: 19px 12px;
+    text-align: center;
+}
+h1{
+    font-size: 24px;
+    font-weight: 700;
+    padding: 5px;
+}
+.small_text{
+    font-size: 16px;
+    font-weight: 400;
+}
+body{
+    background-color: #374040 ;
+}
+.main_sec{
+    padding: 20px;
+}
+.container.active{
+    background-color: bisque;
+}
