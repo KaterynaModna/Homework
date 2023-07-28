@@ -82,3 +82,7 @@ input[type="checkbox"]:checked + .fake_check{
     font-size: 18px;
     font-weight: 400;
 }
+label{
+    width: 100%;
+    display: inline-block;
+}
