@@ -30,15 +30,27 @@ header {
     color: #000;
 }
 .auther_name{
+    padding: 33.5px 0 38.6px;
     text-transform: capitalize;
     font-size: 48px;
     font-weight: 700;
-    margin-bottom: 50px;
 }
-.first_sec{
-    margin-top: 33.5px;
+.denis_photo{
+    max-width: 941px;
+    padding: 0 0 100px;
 }
-.img_w{
-    margin-top: 50px;
-    width: 100%;
+.about{
+    background-color: #F6F6F6;
+    text-align: center;
+    
+}
+.me{
+    text-transform: capitalize;
+    padding: 100px 0 29px;
+}
+.about_text{
+    padding: 0 0 40px;
+}
+.about_text:last-child{
+    padding: 0 0 100px;
 }
