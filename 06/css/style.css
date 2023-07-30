@@ -10,7 +10,7 @@ html, body{
     max-width: 1166px;
     margin: 0 auto;
     font-size: 0;
-    padding: 106px 112.5px 156px;
+    padding: 40px 112.5px 0;
 }
 main{
     border: 25px solid #2B81AC;
@@ -20,6 +20,7 @@ main{
 }
 section{
     height: 1000px;
+    margin:0 auto;
 }
 .w_25{
     width:25%
@@ -77,4 +78,14 @@ section{
 i{
     font-size: 42px;
     font-weight: 400;
+}
+.background{
+    text-align:center;
+    margin: 0 auto;
+    padding: 61px 0 0 0;
+    font-size: 21px;
+    font-weight: 400;
+}
+.down_txt{
+    padding: 37px 0 119px 0;
 }
