@@ -32,6 +32,9 @@ h2, h4{
 }
 body{
     background-color: #374040 ;
+    margin: 20px; 
+    border: 10px solid #fff; 
+    padding: 20px; 
 }
 .main_sec{
     padding: 20px;
