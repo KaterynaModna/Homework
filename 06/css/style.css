@@ -2,13 +2,21 @@ html, body{
     width: 100%;
     height: 100%;
     font-size: 20px;
-    background-color: aqua;
+    background-color: #fff;
+    color: #fff;
     font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .main_d{
-    width: 800px;
+    max-width: 1166px;
     margin: 0 auto;
     font-size: 0;
+    padding: 106px 112.5px 156px;
+}
+main{
+    border: 25px solid #2B81AC;
+    margin: 106px 112.5px 156px;
+    background-color: #39C;
+    
 }
 section{
     height: 1000px;
@@ -25,40 +33,48 @@ section{
 .main_d div{
     display: inline-block;
     padding: 20px 0;
-    background-color: #fff;
-    font-size: 16px;
+    font-size: 22px;
     text-align: center;
+    cursor: pointer;
+    border: 1px solid #fff;
 }
 .main_d div:nth-child(1){
-    background-color: #3399CC;
+    background-color: rgba(51, 153, 204, 0.7);
 }
 .main_d div:nth-child(2){
-    background-color: #33CCCC;
+    background-color: rgba(51, 204, 204, 0.7);
 }
 .main_d div:nth-child(3){
-    background-color: #996699;
+    background-color: rgba(153, 102, 153, 0.7);
 }
 .main_d div:nth-child(4){
-    background-color: #C24747;
+    background-color: rgba(194, 71, 71, 0.7);
 }
 .main_d div:nth-child(5){
-    background-color: #E2674A;
+    background-color: rgba(226, 103, 74, 0.7);
 }
 .main_d div:nth-child(6){
-    background-color: #FFCC66;
+    background-color: rgba(255, 204, 102, 0.7);
 }
 .main_d div:nth-child(7){
-    background-color: #99CC99;
+    background-color: rgba(153, 204, 153, 0.7);
 }
 .main_d div:nth-child(8){
-    background-color: #669999;
+    background-color: rgba(102, 153, 153, 0.7);
 }
 .main_d div:nth-child(9){
-    background-color: #CC6699;
+    background-color: rgba(204, 102, 153, 0.7);
 }
 .main_d div:nth-child(10){
-    background-color: #339966;
+    background-color: rgba(51, 153, 102, 0.7);
 }
 .main_d div:nth-child(11){
-    background-color: #666699;
+    background-color: rgba(102, 102, 153, 0.7);
+}
+.main_d div:hover{
+    opacity: 0.7;
+}
+i{
+    font-size: 42px;
+    font-weight: 400;
 }
