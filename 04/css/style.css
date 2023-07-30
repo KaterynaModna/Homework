@@ -103,6 +103,7 @@ height: 85px;
     margin-top: 60px;
     width: 100%;
     font-size: 0;
+    padding: 0 0 83px;
 }
 .one_star{
     display: inline-block;
@@ -117,3 +118,37 @@ height: 85px;
 .one_star.active{
     background-image: url(../img/Star.svg);
 } 
+.portfolio{
+    text-transform: capitalize;
+    padding: 119px 0 68px;
+}
+a{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+}
+.container_photo{
+    display: inline-block;
+    max-width: 936px;
+}
+.f_img{
+    padding: 0 0 15.5px;
+}
+.f{
+    margin-bottom: 128px;
+    display: block;
+}
+.r_img{
+    padding: 0 0 8px;
+}
+.r{
+    margin-bottom: 136px;
+    display: block;
+}
+.m_img{
+padding: 0 0 1px;
+}
+.m{
+    margin-bottom: 101px;
+    display: block;
+}
