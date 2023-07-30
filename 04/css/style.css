@@ -120,6 +120,8 @@ height: 85px;
 } 
 .portfolio{
     text-transform: capitalize;
+    font-size: 34px;
+    font-weight: 700;
     padding: 119px 0 68px;
 }
 a{
@@ -151,4 +153,59 @@ padding: 0 0 1px;
 .m{
     margin-bottom: 101px;
     display: block;
+}
+.contacts{
+    text-transform: capitalize;
+    font-size: 34px;
+    font-weight: 700;
+}
+.container{
+    text-align: center;
+}
+.contacts{
+    text-transform: capitalize;
+    font-size: 34px;
+    font-weight: 700;
+    padding: 100px 0 21px;
+}
+.contact_text{
+    padding: 0 0 78px;
+    font-size: 18px;
+    font-weight: 400px;
+    max-width: 275px;
+    display: inline-block;
+    text-align: center;
+}
+#send{
+    color: #FFF;
+    background-color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    width: 180.5px;
+    height: 42px;
+    border-radius: 20px;
+}
+.button_s{
+    padding: 0 0 37px;
+}
+.social_list_item{
+    display: inline-block;
+    margin-right: 60px;
+}
+.social_list_item:last-child{
+    margin-right: 0;
+}
+.social_photo{
+    width: 39px;
+    margin: 0 auto 44px;
+}
+.last_name{
+    color: #828282;
+    font-size: 14px;
+    font-weight: 400;
+    max-width: 243px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 0 159px;
 }
