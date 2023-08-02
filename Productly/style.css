@@ -2,17 +2,105 @@ html,body{
 font-family:'Monserrat';
 color: #2F281E;
 }
-.head_of{
+.container{
     max-width: 1440px;  
     margin:0 auto;
     padding: 0 0 70px;
 }
-.head_of img{
+#logo{
+    display: inline-block;
+    width: 200px;
+}
+.navig{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.nav_list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+a{
+    text-decoration: none;
+}
+.nav_list_item a{
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    color: #2F281E;
+}
+.nav_list_item:first-child .navi_link{
+   color: #FF9900;
+}
+#sign_in{
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    width: 110px;
+    height: 46px;
+    display: inline-block;
+    margin-right: 32px;
+
+}
+#sign_up{
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #F90;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    width: 110px;
+    height: 46px;
     display: inline-block;
 }
-.site_h{
-    display: inline-block;
+.first_sec{
+    width: 1200px;
 }
+.container_sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.flex_container{
+    display: flex;
+    align-items: flex-start;
+}
+.text_part{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    justify-content: center;
+}
+#start{
+    margin-top: 20px;
+    font-family: 'Poppins';
+    color: #fff;
+    background-color: #F90;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    width: 180px;
+    height: 50px;
+    padding: 13px 40px;
+}
+.background_img{
+    flex:1;
+    background-image: url('./img/Image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 498px;
+height: 438px;
+flex-shrink: 0;
+}
+/*
 .site_h ul{
     padding: 26px 198px;
 }
@@ -98,4 +186,4 @@ button{
 .text_part{
     position: absolute;
     top: 97px
-}
+}*/
