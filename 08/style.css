@@ -52,7 +52,7 @@ a {
 
 main{
     display: flex;
-    width: 1200px;
+    max-width: 1200px;
     flex-direction: column;
     align-items: flex-start;
     gap: 70px;
@@ -62,13 +62,37 @@ main{
     font-family: 'Francois One';
     font-weight: 400;
     text-transform: capitalize;
+    position: relative;
+    top: 0;
+    display: inline-block;
 }
 
 .numer {
     font-family: 'Farro';
+    position: absolute;
+    top: -10px;
+    left: 100%;
+    margin-left: 5px;
+    width: 100px;
+    height: 20px;
+    font-size: 12px;
 }
 
 .main_text {
     font-family: 'PT Sans';
     font-weight: 400;
+}
+.main_sec{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+.highlight{
+    color: #000;
+    background-color: #d8d8d8;
+}
+.name_wrapp{
+    position: relative;
+    display: inline-block;
 }
