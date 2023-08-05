@@ -1,0 +1,74 @@
+html,
+body {
+    font-family: 'Monserrat';
+    color: #2F281E;
+}
+
+header {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 70px;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px 0;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline-block;
+    max-width: 200px;
+    min-width: 150px;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.head_lang {
+    font-family: 'tourney';
+    text-transform: uppercase;
+}
+
+.head_nav_item {
+    font-family: 'staatliches';
+    display: inline;
+    font-size: 23px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    width: 1200px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+.head_name {
+    font-family: 'Francois One';
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.numer {
+    font-family: 'Farro';
+}
+
+.main_text {
+    font-family: 'PT Sans';
+    font-weight: 400;
+}
