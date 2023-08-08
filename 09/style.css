@@ -12,18 +12,16 @@ header {
     left:0;
     top: 0;
     width: 100%;
+    height: 40px;
 }
 
 main {
-    max-width: 940px;
+    max-width: 1440px;
     padding: 10px 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     position: relative;
 }
 .nav_sidebar{
-    padding: 20px 0;
-    gap: 70px;
-    align-self: flex-start;
     max-width: 385px;
 }
 
@@ -62,15 +60,23 @@ a {
 
 .side_bar{
     display: flex;
-    align-items: stretch;
     align-self: flex-start;
     position: sticky;
-    left: 0
+    left: 0;
+    top: 0;
+    margin-left: 120px;
 
+}
+.divider {
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+    margin-bottom: 20px;
 }
 
 .head_name {
     font-family: 'Francois One';
+    font-size: 25px;
     font-weight: 400;
     text-transform: capitalize;
     position: relative;
@@ -79,10 +85,11 @@ a {
 }
 .nav_sidebar_item{
     font-family: 'Francois One';
-    font-size: 36px;
+    font-size: 25px;
     font-weight: 400;
     text-transform: capitalize;
     border-bottom: 1px solid #BDBDBD;
+    padding-top: 70px;
 }
 
 .numer {
@@ -102,6 +109,7 @@ a {
 }
 .main_sec{
     max-width: 765px;
+    padding-left: 30px;
 }
 .highlight{
     color: #000;
@@ -112,11 +120,19 @@ a {
     display: inline-block;
 }
 .container_wrapp{
+    max-width: 1200px;
     display: flex;
+}
+.back_img{
+    background-image:url(./img/bg-picture.svg);
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: 700px 100px;
 }
 .main_sec_wrapp{
     
     display: flex;
     flex-direction: column;
     gap: 40px;
+    padding-top: 70px;
 }
