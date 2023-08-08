@@ -71,7 +71,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: rotateY(0deg);
+    transform: rotateX(0deg);
   }
   .flip-card-front {
     background-color: #E6E6E6;
