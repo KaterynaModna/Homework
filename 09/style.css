@@ -8,11 +8,6 @@ header {
     max-width: 1440px;
     margin: auto;
     padding: 0 70px;
-    position: fixed;
-    left:0;
-    top: 0;
-    width: 100%;
-    height: 40px;
 }
 
 main {
@@ -30,8 +25,13 @@ main {
     display: flex;
     flex-direction: row;
     justify-content:flex-start;
+    left:0;
+    top: 0;
+    width: 100%;
+    position: fixed;
     gap: 40px;
     flex-wrap: wrap;
+    height: 40px;
 }
 
 .logo {
