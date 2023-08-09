@@ -1,11 +1,12 @@
 @font-face {
     font-family: 'Gotem';
     src: url(./Gotem/Gotham-Bold.otf) format(otf),
-    url(./Gotem/Gotham-Bold.ttf) format(ttf),
-    url(./Gotem/Gotham-Bold.woff) format(woff);
+        url(./Gotem/Gotham-Bold.ttf) format(ttf),
+        url(./Gotem/Gotham-Bold.woff) format(woff);
 }
 
-html, body {
+html,
+body {
     font-family: 'Monserrat';
     color: #2F281E;
 }
@@ -132,6 +133,7 @@ a {
 .tools {
     padding-top: 99px;
     text-align: center;
+    margin-bottom: 104px;
 }
 
 .head_text {
@@ -150,7 +152,7 @@ a {
     gap: 50px;
     align-items: center;
     justify-content: center;
-    
+
     text-align: left;
 }
 
@@ -160,7 +162,7 @@ a {
     font-size: 22px;
     font-weight: 600;
     padding-bottom: 16px;
-    
+
 }
 
 .smaller_tools_txt {
@@ -169,9 +171,10 @@ a {
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 70px;
-   
+
 }
-.icons{
+
+.icons {
     display: inline-flex;
     width: 50px;
     height: 50px;
@@ -183,25 +186,75 @@ a {
     color: #fff;
     font-size: 20px;
 }
-.item:nth-of-type(1n) .icons{
+
+.item:nth-of-type(1n) .icons {
     background-color: #7752BE;
 }
-.item:nth-of-type(2n) .icons{
+
+.item:nth-of-type(2n) .icons {
     background-color: #FAB005;
 }
-.item:nth-of-type(3n + 3) .icons{
+
+.item:nth-of-type(3n + 3) .icons {
     background-color: #F03E3D;
 }
-.item:nth-of-type(4n + 4) .icons{
+
+.item:nth-of-type(4n + 4) .icons {
     background-color: #4DADF7;
 }
 
-.page_wrapper{
-    background-image:url(./img/bg.svg);
-    background-repeat:no-repeat;
+.page_wrapper {
+    background-image: url(./img/bg.svg);
+    background-repeat: no-repeat;
     background-position: bottom;
 }
-.but{
+
+.but {
     display: inline-block;
     margin-bottom: 74px;
+}
+
+.prof {
+    color: #544837;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-top: 87px;
+}
+
+.prof p {
+    max-width: 525px;
+}
+
+.prof_head {
+    color: #2F281E;
+    font-size: 36px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.prof_down_head {
+    margin-bottom: 40px;
+}
+
+.prof_list {
+    color: #2F281E;
+}
+
+.prof_list_item {
+    font-weight: 700;
+}
+
+.image {
+    background-image: url('./img/prof.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 562px;
+    height: 573px;
 }
