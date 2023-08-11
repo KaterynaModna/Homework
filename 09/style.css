@@ -5,9 +5,9 @@ body {
 }
 
 header {
-    max-width: 1440px;
     margin: auto;
     padding: 0 70px;
+    position: fixed;
 }
 
 main {
@@ -28,7 +28,7 @@ main {
     left:0;
     top: 0;
     width: 100%;
-    position: fixed;
+    max-width: 1440px;
     gap: 40px;
     flex-wrap: wrap;
     height: 40px;
