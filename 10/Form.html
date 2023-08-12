@@ -96,15 +96,17 @@
                 <h2>Profile</h2>
                 <div class="second_form_group">
                     <img class="profile_img" src="./img/source_img.png">
+                <div class="file_wrapper">
                     <div class="custom_file">
                         <label class="fake_file" for="file">
                             <span class="icon"></span>
                         </label>
                         <input type="file" name="file" id="file">
+                        <button class="trash"><img src="./img/Trash.svg"></button>
+                    </div>
                         <p class="email_text">Up to 1 MB (300x300 px)</p>
                     </div>
-                    <button class="trash"><img src="./img/Trash.svg"></button>
-                </div>
+            </div>
                 <div class="form_group">
                     <div class="input_group">
                         <label for="name">
@@ -151,10 +153,10 @@
                         <input type="password" id="zip" name="zip" minlength="5" required>
                     </div>
                     <div class="input_group">
-                        <label for="number">
+                        <label for="tel">
                             Phone number
                         </label>
-                        <input type="number" id="number" name="number" required>
+                        <input type="tel" id="tel" name="tel" required>
                     </div>
                 </div>
                 <button class="upd">Update</button> 
