@@ -23,18 +23,18 @@
                         <label for="first">
                             First name
                         </label>
-                        <input type="text" id="first" name="fname">
+                        <input type="text" id="first" name="fname" minlength="5" maxlength="15" required>
                     </div>
                     <div class="input_group">
                         <label for="last">
                             Last name
                         </label>
-                        <input type="text" id="last" name="lname">
+                        <input type="text" id="last" name="lname" minlength="3" maxlength="20" required>
                     </div>
                 </div>
                 <div class="input_group_one">
                     <label for="mail">Email</label>
-                    <input type="email" id="mail" name="user_mail">
+                    <input type="email" id="mail" name="user_mail" required>
                 </div>
                 <p class="email_text">We'll never share your email with anyone else.</p>
                 <div class="form_group_radio">
@@ -49,7 +49,7 @@
                     <div class="input_group">
                         <label class="select_label" for="country">Country</label>
                         <div class="custom_select">
-                        <select class="select_item" name="country" id="country">
+                        <select class="select_item" name="country" id="country" required>
                             <option value="" selected disabled>Select</option>
                             <option value="1">Ukraine</option>
                             <option value="2">USA</option>
@@ -64,7 +64,7 @@
                         <label for="city">
                             City
                         </label>
-                        <input type="text" id="City" name="city">
+                        <input type="text" id="City" name="city" minlength="4" maxlength="20" required>
                     </div>
                     </div>
 
@@ -77,7 +77,7 @@
                                 terms of use
                             </a>
                         </li>
-                        <li class="terms_list_item">
+                        <li class="terms_txt">
                             and
                         </li>
                         <li class="terms_list_item">
@@ -86,7 +86,11 @@
                             </a>
                         </li>
                     </ul>
-
+                    <hr>
+<div class="text_wrapper">
+    <p class="bottom_text">Have an account?</p>
+    <a href="#" class="bottom_link">Log in</a>
+</div>
             </form>
         </div>
     </div>
