@@ -1,8 +1,11 @@
 .container {
-  max-width: 1170px;
-  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   margin: 0 auto;
-  margin: 122px 135px;
+  margin: 2rem 2.5rem;
 }
 
 header {
@@ -14,7 +17,7 @@ header {
 }
 header h4 {
   text-transform: uppercase;
-  font-family: Railway;
+  font-family: Raleway;
   font-size: 18px;
   font-weight: 500;
   color: #898F8F;
@@ -72,12 +75,14 @@ header h1 {
 .main_section {
   display: flex;
   justify-content: center;
-  width: 585px;
+  text-align: center;
+  margin-right: 85px;
 }
 
 .main_section_image {
   width: 400px;
   height: 400px;
+  align-items: center;
   position: relative;
 }
 .main_section_image::before, .main_section_image::after {
@@ -102,12 +107,38 @@ header h1 {
   border-right-width: 0;
 }
 
+.double_div {
+  width: 400px;
+  height: 400px;
+  align-items: center;
+}
+.double_div::before, .double_div::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  margin: -15px -15px;
+  border: 1px solid #FC0;
+  transform: rotate(-180deg);
+}
+.double_div::before {
+  top: 0;
+  right: 0;
+  border-top-width: 0;
+  border-right-width: 0;
+}
+.double_div::after {
+  bottom: 0;
+  left: 0;
+  border-bottom-width: 0;
+  border-left-width: 0;
+}
+
 .text_section {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin: 0 auto;
-  max-width: 585px;
+  margin-left: 85px;
   flex-direction: column;
 }
 .text_section h3 {
@@ -123,7 +154,7 @@ header h1 {
   text-transform: capitalize;
   font-size: 24px;
   font-weight: 400;
-  font-family: Railway;
+  font-family: Raleway;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -131,7 +162,7 @@ header h1 {
   color: #333;
   font-size: 14px;
   font-size: 500;
-  font-family: Railway;
+  font-family: Raleway;
   max-width: 430px;
   margin-top: 50px;
   margin-bottom: 20px;
@@ -161,19 +192,13 @@ header h1 {
 }
 
 .three_line-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   margin-bottom: 25px;
-}
-.three_line-container .line {
-  width: 10px;
+  width: 50px;
   height: 4px;
-  background-color: #FC0;
-  margin: 0 5px;
-}
-.three_line-container .line.big {
-  width: 20px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+  background: linear-gradient(to right, #FC0 0%, #FC0 20%, #fff 20%, #fff 30%, #FC0 30%, #FC0 70%, #fff 70%, #fff 80%, #FC0 80%, #FC0 100%);
 }
 
 .button_positioning {

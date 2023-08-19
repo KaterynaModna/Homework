@@ -2,14 +2,18 @@ $yellow-color:#FC0;
 $gray-color:#666;
 $upper: uppercase;
 $capital: capitalize;
-$font_railway: Railway;
+$font_railway: Raleway;
 $font_roboto: Roboto;
 
 .container{
-    max-width:1170px ;
-    width: 90%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
     margin: 0 auto;
-    margin: 122px 135px ;
+    margin: 2rem 2.5rem ;
 }
 header{
     display: flex;
@@ -77,11 +81,13 @@ header{
 .main_section{
     display: flex;
     justify-content: center;
-    width: 585px;
+    text-align: center;
+    margin-right: 85px;
 }
 .main_section_image{
     width: 400px;
     height: 400px;
+    align-items: center;
     position: relative;
     &::before, &::after{
         content: "";
@@ -103,15 +109,41 @@ header{
         right: 0;
         border-bottom-width: 0;
         border-right-width: 0;
-    }
 
+    } 
+}
+.double_div{
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    &::before, &::after{
+        content: "";
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        margin:-15px -15px;
+        border: 1px solid $yellow-color;
+        transform: rotate(-180deg);
+    }
+    &::before{
+        top: 0;
+        right: 0;
+        border-top-width: 0;
+        border-right-width: 0;
+    }
+    &::after{
+        bottom: 0;
+        left: 0;
+        border-bottom-width: 0;
+        border-left-width: 0;
+
+    } 
 }
 .text_section{
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 0 auto;
-    max-width: 585px;
+    margin-left: 85px;
     flex-direction: column;
     h3{
         color:$gray-color;
@@ -163,19 +195,25 @@ header{
 
 }
 .three_line-container{
-    display: flex;
-    justify-content: center;
-  align-items: center;
-  margin-bottom: 25px;
-  .line{
-    width: 10px;
+    display: inline-block;
+    margin-bottom: 25px;
+    width: 50px;
     height: 4px;
-    background-color: $yellow-color;
-    margin: 0 5px;
-  &.big{
-    width: 20px;
-  }
-}
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background: linear-gradient(
+    to right,
+    #FC0 0%,    
+    #FC0 20%,    
+    #fff 20%,    
+    #fff 30%,    
+    #FC0 30%,    
+    #FC0 70%,   
+    #fff 70%,    
+    #fff 80%, 
+    #FC0 80%,     
+    #FC0 100%,   
+  );
 }
 .button_positioning{
     display: flex;
