@@ -26,10 +26,6 @@ header {
   display: flex;
 }
 
-.logo_item {
-  --empty:transparent;
-}
-
 .logo {
   width: 32px;
   height: 32px;
@@ -153,6 +149,7 @@ ul li {
   width: 38px;
   height: 38px;
   background-color: #fff;
+  padding: 8px;
   border-radius: 8px;
   margin-bottom: 40px;
 }
@@ -160,13 +157,40 @@ ul svg {
   width: 20px;
   height: 20px;
 }
-
-.facebook {
+ul .facebook {
   width: 10px;
   height: 18.5px;
 }
-
-.twitter {
+ul .twitter {
   width: 20px;
   height: 16px;
+}
+
+li:hover, .facebook:hover, .twitter:hover {
+  --p1:#52C29D;
+}
+
+.cards:hover {
+  border: 1px solid #52C29D;
+  --mg1:#E1F4F5;
+  --mg2:#E1F4F5;
+  --mg3:#F4FEFF;
+  --mg4:#CAEFF2;
+  --mg5:#E1F4F5;
+  --mg6:#CAEFF2;
+  --mg7:#CAEFF2;
+  --mg8:#52C29D;
+  --bd1:#E1F4F5;
+  --bd2:#CAEFF2;
+  --bd3:#F4FEFF;
+  --bd4:#CAEFF2;
+  --bd5:#CAEFF2;
+  --bd7:#52C29D;
+  --ph1:#E1F4F5;
+  --ph2:#CAEFF2;
+  --ph3:#F4FEFF;
+  --ph4:#CAEFF2;
+  --ph5:#E1F4F5;
+  --ph6:#E1F4F5;
+  --ph7:#52C29D;
 }
