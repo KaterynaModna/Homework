@@ -14,6 +14,9 @@ body {
     color: #000;
     font-size: 36px;
 }
+.name_section.light{
+    font-weight: 400;
+}
 
 .page_wrapper {
     max-width: 1440px;
@@ -180,47 +183,3 @@ div.gradient:hover .icon_wrapper_right:hover{
     opacity: 0.8;
     font-weight: 400;
 }
-
-
-/* .icon_wrapper:hover{
-    position: absolute;
-    left:20px;
-    top:20px;
-    padding: 10px;
-    background-color: aliceblue;
-/* } */
-
-/* .icon_background{ 
-    position: absolute;
-    display: flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 8px;
-    background: rgba(224, 224, 224, 0.50);
-    justify-content: center;
-    align-items: center;
-}
-.icon_background.left{
-    left:20px;
-    top:20px;
-}
-.icon_background.right{
-    right:20px;
-    top:20px;
-}
-.icon_left, .icon_right{
-    position: absolute;
-    color:#4F4F4F;
-    height: 20px;
-}
-.icon_left{
-    left:29px;
-    top:30px; */
-    /* width: 21px;
-}
-.icon_right{
-    right:0px;
-    top:30px;
-    right:30px;
-    width: 20px;
-} */ 
