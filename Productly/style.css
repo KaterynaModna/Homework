@@ -1,15 +1,12 @@
 @font-face {
-    font-family: 'Gotem';
-    src: url(./Gotem/Gotham-Bold.otf) format(otf),
-        url(./Gotem/Gotham-Bold.ttf) format(ttf),
-        url(./Gotem/Gotham-Bold.woff) format(woff);
+    font-family: 'Gotham';
+    src: local("Gotham-Bold"), 
+    url(./Gotham/Gotham-Bold.otf) format(otf),
+    url(./Gotham/Gotham-Bold.ttf) format(ttf),
+    url(./Gotham/Gotham-Bold.woff) format(woff);
+        font-weight: bold;
 }
 
-html,
-body {
-    font-family: 'Monserrat';
-    color: #2F281E;
-}
 
 .container {
     margin: 0 auto;
@@ -35,6 +32,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 a {
@@ -69,31 +70,40 @@ a {
 
 #sign_in,
 #sign_up {
+    
+font-family: Montserrat;
+font-size: 16px;
+font-weight: 600;
     font-size: 16px;
     font-weight: 600;
     border: 1px solid #BCD0E5;
     border-radius: 4px;
-    max-width: 110px;
+    max-width: 100%;
     padding: 13px 25px;
 }
 
-.first_sec {
+.first_sec, .prof {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 0 auto;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 1.5em;
     margin-top: 87px;
 
 }
-
-.back_img {
+li{
+    font-family: 'Montserrat';
+    color: #2F281E;
+}
+.back_img, .image, .image_manager, .image_marketer {
     background-image: url('./img/Image.svg');
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 650px;
-    height: 495px;
+    background-size: auto;
+    background-position: right;
+    min-height: 85vh;
+    max-width:  650px;
+    width: 100%;
 }
 
 .text_part {
@@ -218,13 +228,6 @@ a {
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    gap: 2em;
     margin-top: 87px;
     margin-bottom: 100px;
 }
@@ -245,29 +248,30 @@ a {
 }
 
 .prof_list {
+    display: inline-block;
     color: #2F281E;
 }
 
 .prof_list_item {
     font-weight: 700;
 }
-
-.image, .image_manager, .image_marketer {
+.prof_list_p{
+    padding-top: 5px;
+}
+.text_part_prof{
+    max-width: 505px;
+}
+.image {
     background-image: url('./img/prof.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 562px;
-    height: 573px;
+    max-width: 562px;
 }
 .image_manager{
     background-image: url('./img/managers.svg');
-    width: 570px;
-    height: 519.6px;
+    max-width: 570px;
 }
 .image_marketer{
     background-image: url('./img/marketers.svg');
-    width: 540px;
-    height: 610px;
+    max-width: 540px;
 }
 .prof_list p{
     margin-bottom:30px;
@@ -307,13 +311,16 @@ footer{
 .container.foot{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     gap: 50px;
+    margin:70px auto;
 }
-.column.input{
+.column{
     max-width:340px;
 }
-label{
+.column:last-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 input{
     display: flex;
@@ -329,10 +336,27 @@ input{
     box-sizing: border-box;
     border-radius: 4px;
     border: 1px solid #BCD0E5;
+    margin-bottom: 25px;
 }
 input::placeholder{
     color: #BCD0E5;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
+}
+.column_head_text, .column_head_special{
+    color: #2F281E;
+    font-family: 'Gotham';
+    font-size: 20px;
+    font-weight: 700;
+    max-width: 280px;
+    margin-bottom: 30px;
+}
+.column_head_special{
+    margin-bottom: 25px;
+}
+.column_list{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
 }
