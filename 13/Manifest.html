@@ -1,11 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../04/css/reset.css">
+    <link rel="stylesheet" href="./style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Red+Hat+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <title>Manifest</title>
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <div class="navi_head">
+                <svg class="navi_logo_item">
+                    <use id="logo" xlink:href="./assets/sprite.svg#logo" />
+                </svg>
+                <ul class="navi_list">
+                    <li class="navi_list_item">
+                        home
+                    </li>
+                    <li class="navi_list_item">
+                        about
+                    </li>
+                    <li class="navi_list_item">
+                        works
+                    </li>
+                    <li class="navi_list_item">
+                        blog
+                    </li>
+                    <li class="navi_list_item">
+                        contact
+                    </li>
+                </ul>
+                <svg class="navi_search_item">
+                    <use id="search" xlink:href="./assets/sprite.svg#search" />
+                </svg>
+            </div>
+        </header>
+        <main>
+            <section class="bg_picture">
+                <picture>
+                    <source srcset="./img_desk/bg_desktop.webp" type="image/webp" media="(min-width: 1440px)">
+                    <source srcset="./img_tablet/bg_tablet.webp" type="image/webp" media="(min-width: 768px)">
+                    <source srcset="./img_mobile/bg_mobile.webp" type="image/webp" media="(max-width: 767px)">
+                    <img src="./img_desk/bg_desktop.webp">
+
+                    <h1 class="over_text">Manifest is a newborn theme. Clean, simple and fast.</h1>
+                </picture>
+            </section>
+            <section class="blog">
+                <h2 class="blog_head">Blog</h2>
+                <div class="section_wrapper">
+                    <picture class="blog_picture">
+                        <source srcset="./img_desk/blog_arrow_desktop.webp" type="image/webp"
+                            media="(min-width: 1440px)">
+                        <source srcset="./img_tablet/blog_arrow_tablet.webp" type="image/webp"
+                            media="(min-width: 768px)">
+                        <source srcset="./img_mobile/blog_arrow_mobile.webp" type="image/webp"
+                            media="(max-width: 767px)">
+                        <img src="./img_desk/blog_arrow_desktop.webp">
+                    </picture>
+                    <div class="blog_text_wrapper">
+                        <p class="blog_up_text">Technology, Interface Design</p>
+                        <h3 class="blog_head_text">Using UX Design to Build a Sustainable Future</h3>
+                        <p class="blog_date">6 May, 2020</p>
+                        <p class="blog_main_text">Transformation has to be driven by everybody, not just by climate
+                            groups, and we have a responsibility to use our influence to drive this.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog">
+                <div class="section_wrapper">
+                    <div class="blog_text_wrapper">
+                        <p class="blog_up_text">Technology, Interface Design</p>
+                        <h3 class="blog_head_text">Using UX Design to Build a Sustainable Future</h3>
+                        <p class="blog_date">6 May, 2020</p>
+                        <p class="blog_main_text">Transformation has to be driven by everybody, not just by climate
+                            groups, and we have a responsibility to use our influence to drive this.</p>
+                    </div>
+                    <picture>
+                        <source srcset="./img_desk/blog-image_desktop.webp" type="image/webp"
+                            media="(min-width: 1440px)">
+                        <source srcset="./img_tablet/blog_tablet.webp" type="image/webp" media="(min-width: 768px)">
+                        <source srcset="./img_mobile/blog_mobile.webp" type="image/webp" media="(max-width: 767px)">
+                        <img src="./img_desk/blog-image_desktop.webp">
+                    </picture>
+                </div>
+            </section>
+            <section class="posts">
+                <h2 class="posts_head">Latest Posts</h2>
+                <p class="little_text">View all</p>
+                <div class="posts_wrapper">
+                    <div class="first_post">
+                        <picture>
+                            <source srcset="./img_desk/lamp_desktop.webp" type="image/webp" media="(min-width: 1440px)">
+                            <source srcset="./img_tablet/post_lamp_tablet" type="image/webp" media="(min-width: 768px)">
+                            <source srcset="./img_mobile/post_lamp_mobile" type="image/webp" media="(max-width: 767px)">
+                            <img src="./img_desk/lamp_desktop.webp">
+                        </picture>
+                        <div class="post_text_section">
+                            <p class="post_text_little">Interface Design</p>
+                            <p class="post_text_date">8 June, 2020</p>
+                            <h3 class="post_head_text">UX traffic light colours</h3>
+                            <p class="post_main_text">UI has to make a huge visual difference between warning, an alert
+                                and a success.</p>
+                        </div>
+                    </div>
+
+                    <div class="first_post">
+                        <picture>
+                            <source srcset="./img_desk/post_arrow_desktop.webp" type="image/webp" media="(min-width: 1440px)">
+                            <source srcset="./img_tablet/post_arrow_tablet" type="image/webp" media="(min-width: 768px)">
+                            <source srcset="./img_mobile/post_arrow_mobile" type="image/webp" media="(max-width: 767px)">
+                            <img src="./img_desk/post_arrow_desktop.webp">
+                        </picture>
+                        <div class="post_text_section">
+                            <p class="post_text_little">Technology</p>
+                            <p class="post_text_date">6 May, 2020</p>
+                            <h3 class="post_head_text">Using UX Design to Build a Sustainable Future</h3>
+                            <p class="post_main_text">UI has to make a huge visual difference between warning, an alert
+                                and a success.</p>
+                        </div>
+                    </div>
+
+                    <div class="first_post">
+                        <picture>
+                            <source srcset="./img_desk/post_desktop.webp" type="image/webp" media="(min-width: 1440px)">
+                            <source srcset="./img_tablet/post_tablet" type="image/webp" media="(min-width: 768px)">
+                            <source srcset="./img_mobile/post_mobile" type="image/webp" media="(max-width: 767px)">
+                            <img src="./img_desk/post_desktop.webp">
+                        </picture>
+                        <div class="post_text_section">
+                            <p class="post_text_little">Visual Design</p>
+                            <p class="post_text_date">8 June, 2020</p>
+                            <h3 class="post_head_text">Creativity vs. UX</h3>
+                            <p class="post_main_text">Is it possible to create a delightful user experience without following best UX practices?</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>
