@@ -15,36 +15,37 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="navi_head">
-                <svg class="navi_logo_item">
-                    <use id="logo" xlink:href="./assets/sprite.svg#logo" />
-                </svg>
-                <ul class="navi_list">
-                    <li class="navi_list_item">
-                        home
-                    </li>
-                    <li class="navi_list_item">
-                        about
-                    </li>
-                    <li class="navi_list_item">
-                        works
-                    </li>
-                    <li class="navi_list_item">
-                        blog
-                    </li>
-                    <li class="navi_list_item">
-                        contact
-                    </li>
-                </ul>
-                <svg class="navi_search_item">
-                    <use id="search" xlink:href="./assets/sprite.svg#search" />
-                </svg>
-            </div>
-        </header>
-        <main>
-            <section class="bg_picture">
+    <header>
+        <div class="navi_head">
+            <svg class="navi_logo_item">
+                <use id="logo" xlink:href="./assets/sprite.svg#logo" />
+            </svg>
+            <ul class="navi_list">
+                <li class="navi_list_item">
+                    home
+                </li>
+                <li class="navi_list_item">
+                    about
+                </li>
+                <li class="navi_list_item">
+                    works
+                </li>
+                <li class="navi_list_item">
+                    blog
+                </li>
+                <li class="navi_list_item">
+                    contact
+                </li>
+            </ul>
+            <svg class="navi_search_item">
+                <use id="search" xlink:href="./assets/sprite.svg#search" />
+            </svg>
+        </div>
+    </header>
+    <main>
+
+        <section class="bg_picture">
+            <div class="container">
                 <picture>
                     <source srcset="./img_desk/bg_desktop.webp" type="image/webp" media="(min-width: 1440px)">
                     <source srcset="./img_tablet/bg_tablet.webp" type="image/webp" media="(min-width: 768px)">
@@ -53,10 +54,13 @@
 
                     <h1 class="over_text">Manifest is a newborn theme. Clean, simple and fast.</h1>
                 </picture>
-            </section>
+            </div>
+        </section>
+
+        <div class="container">
             <section class="blog">
                 <h2 class="blog_head">Blog</h2>
-                <div class="section_wrapper">
+                <div class="section_wrapper start">
                     <picture class="blog_picture">
                         <source srcset="./img_desk/blog_arrow_desktop.webp" type="image/webp"
                             media="(min-width: 1440px)">
@@ -77,7 +81,7 @@
             </section>
 
             <section class="blog">
-                <div class="section_wrapper">
+                <div class="section_wrapper end">
                     <div class="blog_text_wrapper">
                         <p class="blog_up_text">Technology, Interface Design</p>
                         <h3 class="blog_head_text">Using UX Design to Build a Sustainable Future</h3>
@@ -94,20 +98,30 @@
                     </picture>
                 </div>
             </section>
-            <section class="posts">
-                <h2 class="posts_head">Latest Posts</h2>
-                <p class="little_text">View all</p>
+        </div>
+
+        <section class="posts">
+            <div class="container">
+                <div class="head_wrapper">
+                    <h2 class="posts_head">Latest Posts</h2>
+                    <span class="little_text">View all</span>
+                </div>
                 <div class="posts_wrapper">
                     <div class="first_post">
-                        <picture>
-                            <source srcset="./img_desk/lamp_desktop.webp" type="image/webp" media="(min-width: 1440px)">
-                            <source srcset="./img_tablet/post_lamp_tablet" type="image/webp" media="(min-width: 768px)">
-                            <source srcset="./img_mobile/post_lamp_mobile" type="image/webp" media="(max-width: 767px)">
-                            <img src="./img_desk/lamp_desktop.webp">
-                        </picture>
+                        <div class="picture_wrapper">
+                            <picture>
+                                <source srcset="./img_desk/lamp_desktop.webp" type="image/webp"
+                                    media="(min-width: 1440px)">
+                                <source srcset="./img_tablet/post_lamp_tablet.webp" type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img_mobile/post_lamp_mobile.webp" type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img src="./img_desk/lamp_desktop.webp">
+                            </picture>
+                        </div>
                         <div class="post_text_section">
-                            <p class="post_text_little">Interface Design</p>
-                            <p class="post_text_date">8 June, 2020</p>
+                            <span class="post_text_little">Interface Design</span>
+                            <span class="post_text_date">8 June, 2020</span>
                             <h3 class="post_head_text">UX traffic light colours</h3>
                             <p class="post_main_text">UI has to make a huge visual difference between warning, an alert
                                 and a success.</p>
@@ -115,15 +129,20 @@
                     </div>
 
                     <div class="first_post">
-                        <picture>
-                            <source srcset="./img_desk/post_arrow_desktop.webp" type="image/webp" media="(min-width: 1440px)">
-                            <source srcset="./img_tablet/post_arrow_tablet" type="image/webp" media="(min-width: 768px)">
-                            <source srcset="./img_mobile/post_arrow_mobile" type="image/webp" media="(max-width: 767px)">
-                            <img src="./img_desk/post_arrow_desktop.webp">
-                        </picture>
+                        <div class="picture_wrapper">
+                            <picture>
+                                <source srcset="./img_desk/post_arrow_desktop.webp" type="image/webp"
+                                    media="(min-width: 1440px)">
+                                <source srcset="./img_tablet/post_arrow_tablet.webp" type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img_mobile/post_arrow_mobile.webp" type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img src="./img_desk/post_arrow_desktop.webp">
+                            </picture>
+                        </div>
                         <div class="post_text_section">
-                            <p class="post_text_little">Technology</p>
-                            <p class="post_text_date">6 May, 2020</p>
+                            <span class="post_text_little">Technology</span>
+                            <span class="post_text_date">6 May, 2020</span>
                             <h3 class="post_head_text">Using UX Design to Build a Sustainable Future</h3>
                             <p class="post_main_text">UI has to make a huge visual difference between warning, an alert
                                 and a success.</p>
@@ -131,23 +150,125 @@
                     </div>
 
                     <div class="first_post">
-                        <picture>
-                            <source srcset="./img_desk/post_desktop.webp" type="image/webp" media="(min-width: 1440px)">
-                            <source srcset="./img_tablet/post_tablet" type="image/webp" media="(min-width: 768px)">
-                            <source srcset="./img_mobile/post_mobile" type="image/webp" media="(max-width: 767px)">
-                            <img src="./img_desk/post_desktop.webp">
-                        </picture>
+                        <div class="picture_wrapper">
+                            <picture>
+                                <source srcset="./img_desk/post_desktop.webp" type="image/webp"
+                                    media="(min-width: 1440px)">
+                                <source srcset="./img_tablet/post_house_tablet.webp" type="image/webp"
+                                    media="(min-width: 768px)">
+                                <source srcset="./img_mobile/post_mobile.webp" type="image/webp"
+                                    media="(max-width: 767px)">
+                                <img src="./img_desk/post_desktop.webp">
+                            </picture>
+                        </div>
                         <div class="post_text_section">
-                            <p class="post_text_little">Visual Design</p>
-                            <p class="post_text_date">8 June, 2020</p>
+                            <span class="post_text_little">Visual Design</span>
+                            <span class="post_text_date">8 June, 2020</span>
                             <h3 class="post_head_text">Creativity vs. UX</h3>
-                            <p class="post_main_text">Is it possible to create a delightful user experience without following best UX practices?</p>
+                            <p class="post_main_text">Is it possible to create a delightful user experience without
+                                following best UX practices?</p>
                         </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="container">
+                <div class="head_wrapper">
+                    <h2 class="posts_head">The Most Popular</h2>
+                    <span class="little_text">View all</span>
+                </div>
+                <div class="posts_wrapper">
+
+                    <div class="first_post">
+                        <picture>
+                            <source srcset="./img_desk/popular_lamp_desktop.webp" type="image/webp"
+                                media="(min-width: 1440px)">
+                            <source srcset="./img_tablet/popular_lamp_tablet.webp" type="image/webp"
+                                media="(min-width: 768px)">
+                            <source srcset="./img_mobile/popular_lamp_mobile.webp" type="image/webp"
+                                media="(max-width: 767px)">
+                            <img src="./img_desk/popular_lamp_desktop.webp">
+                        </picture>
+                        <div class="post_text_section">
+                            <span class="post_text_little">Interface Design</span>
+                            <span class="post_text_date">8 June, 2020</span>
+                            <h3 class="post_head_text">Mentorship Match — How a simple LinkedIn feature can boost
+                                diversity</h3>
+                            <p class="post_main_text">LinkedIn is on a clear mission to make professionals more
+                                successful by connecting the global workforce and as we learned — diversity and success
+                                go hand in hand</p>
+                        </div>
+
+                    </div>
+                    <div class="first_post">
+                        <picture>
+                            <source srcset="./img_desk/popular_arrow_desktop.webp" type="image/webp"
+                                media="(min-width: 1440px)">
+                            <source srcset="./img_tablet/popular_arrow_tablet.webp" type="image/webp"
+                                media="(min-width: 768px)">
+                            <source srcset="./img_mobile/popular_arrow_mobile.webp" type="image/webp"
+                                media="(max-width: 767px)">
+                            <img src="./img_desk/popular_arrow_desktop.webp">
+                        </picture>
+                        <div class="post_text_section">
+                            <span class="post_text_little">Visual Design</span>
+                            <span class="post_text_date">8 June, 2020</span>
+                            <h3 class="post_head_text">Creativity vs. UX</h3>
+                            <p class="post_main_text">Is it possible to create a delightful user experience without following best UX practices?</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="load">load more</button>
+            </div>
+        </section>
+<section class="only_text">
+    <div class="container">
+        <div class="head_wrapper">
+            <h3 class="only_text_head">Full-time UI/UX designer
+                Head of Design at VeronaLabs.com</h3>
+            <span class="only_text_little">We work with clients around the world from our headquarters in Charleston, South Carolina.
+                We focus on naming, branding, brand narratives, website design and development, and brand experiences.</span>
+        </div>
     </div>
+</section>
+    </main>
+    <footer>
+        
+        <div class="container">
+        <div class="footer_wrapper">
+        <div class="text_wrapper">
+        <h2>Need a project?</h2>
+        <p>(239) 555-0108</p>
+        <p>tanya.hill@example.com</p>
+    </div>
+        <div class="icon_wrapper">
+            <div class="icon">
+            <svg class="insta">
+                <use xlink:href="./assets/sprite.svg#insta"/>
+            </svg>
+        </div>
+        <div class="icon">
+            <svg class="facebook">
+                <use xlink:href="./assets/sprite.svg#facebook"/>
+            </svg>
+        </div>
+        <div class="icon">
+            <svg class="twitter">
+                <use xlink:href="./assets/sprite.svg#twitter"/>
+            </svg>
+        </div>
+        <div class="icon">
+            <svg class="linkedin">
+                <use xlink:href="./assets/sprite.svg#linkedin"/>
+            </svg>
+        </div>
+        </div>
+    </div>
+    <p>© Copyright Manifest Theme. Allrights reserved</p>
+</div>
+    </footer>
 </body>
 
 </html>

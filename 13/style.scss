@@ -1,12 +1,12 @@
 $lato:'Lato',sans-serif;
 $hot:'Red Hat Display',sans-serif;
-$light_grey:#7B7B7B;
-$dark_grey:#565656;
+$light_grey:var(--grey-500, #7B7B7B);
+$dark_grey: var(--grey-700, #565656);
 
 .container{
-    max-width: 1440px;
     width: 90%;
     margin: 0 auto;
+    max-width: 1170px;
 }
 .navi_head{
     width: 100%;
@@ -55,12 +55,17 @@ picture{
     justify-content: center;
     gap: 50px;
     flex-direction: column;
-    max-width: 1170px;
     margin: 0 auto;
     margin-top: 90px;
 }
 .section_wrapper{
     display: flex;
+    &.start{
+        justify-content: flex-start;
+    }
+    &.end{
+        justify-content: flex-end;
+    }
 }
 .blog_head{
     font-family: $hot;
@@ -94,10 +99,81 @@ picture{
 max-width: 450px;
 padding-top: 50px;
 }
+.posts{
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+.head_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
 .posts_wrapper{
     display: flex;
+    gap: 30px;
 }
 .first_post{
     display: flex;
-    max-width: 370px;
+    flex-direction: column;
+    justify-content: center;
+}
+.post_text_section{
+    font-family: $lato;
+    font-weight: 400;
+    font-size: 16px;
+    color:$dark_grey;
+    span{
+        color: $light_grey;
+        font-size: 12px;
+    }
+    h3{
+        font-family:$hot;
+        font-size: 22px;
+        font-weight: 500;
+        color:#000
+    }
+}
+button{
+    background: $dark_grey;
+    padding: 9.5px 45px;
+    width: auto;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: $lato;
+}
+.load{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+margin-top: 50px;
+margin-bottom: 90px;
+}
+.footer_wrapper{
+    margin-top: 90px;
+    background-color: var(--grey-100, #F4F4F4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon_wrapper{
+    display: flex;
+    gap:23px;
+}
+.icon{
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid $dark_grey;
+svg{
+    width: 24px;
+    height: 24px;
+}
+.facebook{
+width: 13px;
+height: 24px;
+}
+.twitter{
+width: 30px;
+}
 }
