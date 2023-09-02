@@ -21,21 +21,21 @@
                 <use id="logo" xlink:href="./assets/sprite.svg#logo" />
             </svg>
             <ul class="navi_list">
-                <li class="navi_list_item">
+               <a href="#" class="a_home"> <li class="navi_list_item">
                     home
-                </li>
-                <li class="navi_list_item">
+                </li></a>
+                <a href="#"><li class="navi_list_item">
                     about
-                </li>
-                <li class="navi_list_item">
+                </li></a>
+                <a href="#"><li class="navi_list_item">
                     works
-                </li>
-                <li class="navi_list_item">
+                </li></a>
+                <a href="#"><li class="navi_list_item">
                     blog
-                </li>
-                <li class="navi_list_item">
+                </li></a>
+                <a href="#"> <li class="navi_list_item">
                     contact
-                </li>
+                </li></a>
             </ul>
             <svg class="navi_search_item">
                 <use id="search" xlink:href="./assets/sprite.svg#search" />
@@ -75,7 +75,11 @@
                         <h3 class="blog_head_text">Using UX Design to Build a Sustainable Future</h3>
                         <p class="blog_date">6 May, 2020</p>
                         <p class="blog_main_text">Transformation has to be driven by everybody, not just by climate
-                            groups, and we have a responsibility to use our influence to drive this.</p>
+                            groups, and we have a responsibility to use our influence to drive this.
+                            <svg class="arrow">
+                                <use xlink:href="./assets/sprite.svg#arrow"/>
+                            </svg>
+                        </p>
                     </div>
                 </div>
             </section>
@@ -87,7 +91,11 @@
                         <h3 class="blog_head_text">Using UX Design to Build a Sustainable Future</h3>
                         <p class="blog_date">6 May, 2020</p>
                         <p class="blog_main_text">Transformation has to be driven by everybody, not just by climate
-                            groups, and we have a responsibility to use our influence to drive this.</p>
+                            groups, and we have a responsibility to use our influence to drive this.
+                            <svg class="arrow">
+                                <use xlink:href="./assets/sprite.svg#arrow"/>
+                            </svg>
+                        </p>
                     </div>
                     <picture>
                         <source srcset="./img_desk/blog-image_desktop.webp" type="image/webp"
@@ -104,7 +112,11 @@
             <div class="container">
                 <div class="head_wrapper">
                     <h2 class="posts_head">Latest Posts</h2>
-                    <span class="little_text">View all</span>
+                    <span class="little_text">View all
+                        <svg class="arrow">
+                            <use xlink:href="./assets/sprite.svg#arrow"/>
+                        </svg>
+                    </span>
                 </div>
                 <div class="posts_wrapper">
                     <div class="first_post">
@@ -120,8 +132,10 @@
                             </picture>
                         </div>
                         <div class="post_text_section">
+                            <div class="little_text_wrapper">
                             <span class="post_text_little">Interface Design</span>
                             <span class="post_text_date">8 June, 2020</span>
+                            </div>
                             <h3 class="post_head_text">UX traffic light colours</h3>
                             <p class="post_main_text">UI has to make a huge visual difference between warning, an alert
                                 and a success.</p>
@@ -140,13 +154,15 @@
                                 <img src="./img_desk/post_arrow_desktop.webp">
                             </picture>
                         </div>
-                        <div class="post_text_section">
+                         <div class="post_text_section">
+                            <div class="little_text_wrapper">
                             <span class="post_text_little">Technology</span>
                             <span class="post_text_date">6 May, 2020</span>
+                            </div>
                             <h3 class="post_head_text">Using UX Design to Build a Sustainable Future</h3>
                             <p class="post_main_text">UI has to make a huge visual difference between warning, an alert
                                 and a success.</p>
-                        </div>
+                        </div> 
                     </div>
 
                     <div class="first_post">
@@ -162,8 +178,10 @@
                             </picture>
                         </div>
                         <div class="post_text_section">
+                            <div class="little_text_wrapper">
                             <span class="post_text_little">Visual Design</span>
                             <span class="post_text_date">8 June, 2020</span>
+                            </div>
                             <h3 class="post_head_text">Creativity vs. UX</h3>
                             <p class="post_main_text">Is it possible to create a delightful user experience without
                                 following best UX practices?</p>
@@ -176,11 +194,16 @@
             <div class="container">
                 <div class="head_wrapper">
                     <h2 class="posts_head">The Most Popular</h2>
-                    <span class="little_text">View all</span>
+                    <span class="little_text">View all
+                        <svg class="arrow">
+                            <use xlink:href="./assets/sprite.svg#arrow"/>
+                        </svg>
+                    </span>
                 </div>
                 <div class="posts_wrapper">
 
-                    <div class="first_post">
+                    <div class="first_post popular">
+                        <div class="picture_wrapper">
                         <picture>
                             <source srcset="./img_desk/popular_lamp_desktop.webp" type="image/webp"
                                 media="(min-width: 1440px)">
@@ -190,9 +213,12 @@
                                 media="(max-width: 767px)">
                             <img src="./img_desk/popular_lamp_desktop.webp">
                         </picture>
+                        </div>
                         <div class="post_text_section">
+                            <div class="little_text_wrapper">
                             <span class="post_text_little">Interface Design</span>
                             <span class="post_text_date">8 June, 2020</span>
+                            </div>
                             <h3 class="post_head_text">Mentorship Match — How a simple LinkedIn feature can boost
                                 diversity</h3>
                             <p class="post_main_text">LinkedIn is on a clear mission to make professionals more
@@ -201,7 +227,8 @@
                         </div>
 
                     </div>
-                    <div class="first_post">
+                    <div class="first_post popular">
+                        <div class="picture_wrapper">
                         <picture>
                             <source srcset="./img_desk/popular_arrow_desktop.webp" type="image/webp"
                                 media="(min-width: 1440px)">
@@ -211,9 +238,12 @@
                                 media="(max-width: 767px)">
                             <img src="./img_desk/popular_arrow_desktop.webp">
                         </picture>
+                        </div>
                         <div class="post_text_section">
+                            <div class="little_text_wrapper">
                             <span class="post_text_little">Visual Design</span>
                             <span class="post_text_date">8 June, 2020</span>
+                            </div>
                             <h3 class="post_head_text">Creativity vs. UX</h3>
                             <p class="post_main_text">Is it possible to create a delightful user experience without following best UX practices?</p>
                         </div>
@@ -226,16 +256,23 @@
 <section class="only_text">
     <div class="container">
         <div class="head_wrapper">
-            <h3 class="only_text_head">Full-time UI/UX designer
-                Head of Design at VeronaLabs.com</h3>
-            <span class="only_text_little">We work with clients around the world from our headquarters in Charleston, South Carolina.
-                We focus on naming, branding, brand narratives, website design and development, and brand experiences.</span>
+            <div class="only_h_wrapper">
+            <h3 class="only_text_head">Full-time UI/UX designer</h3>
+                <h3 class="only_text_head"> Head of Design at VeronaLabs.com</h3>
+                <p> <svg class="arrow last">
+                    <use xlink:href="./assets/sprite.svg#arrow"/>
+                </svg>
+            </p>
+            </div>
+                <div class="only_span_wrapper">
+            <span class="only_text_little">We work with clients around the world from our headquarters in Charleston, South Carolina.</span>
+                <p>We focus on naming, branding, brand narratives, website design and development, and brand experiences.</p>
+        </div>
         </div>
     </div>
 </section>
     </main>
     <footer>
-        
         <div class="container">
         <div class="footer_wrapper">
         <div class="text_wrapper">
@@ -245,28 +282,32 @@
     </div>
         <div class="icon_wrapper">
             <div class="icon">
-            <svg class="insta">
+                <a href="#"> <svg class="insta"> 
                 <use xlink:href="./assets/sprite.svg#insta"/>
             </svg>
+        </a>
         </div>
         <div class="icon">
-            <svg class="facebook">
+            <a href="#"><svg class="facebook">
                 <use xlink:href="./assets/sprite.svg#facebook"/>
             </svg>
+        </a>
         </div>
         <div class="icon">
-            <svg class="twitter">
+            <a href="#"> <svg class="twitter">
                 <use xlink:href="./assets/sprite.svg#twitter"/>
             </svg>
+            </a>
         </div>
         <div class="icon">
-            <svg class="linkedin">
+            <a href="#"><svg class="linkedin">
                 <use xlink:href="./assets/sprite.svg#linkedin"/>
             </svg>
+        </a>
         </div>
         </div>
     </div>
-    <p>© Copyright Manifest Theme. Allrights reserved</p>
+    <p class="footer_copyright">© Copyright Manifest Theme. Allrights reserved</p>
 </div>
     </footer>
 </body>

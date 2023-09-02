@@ -1,3 +1,7 @@
+body {
+  padding-top: 60px;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
@@ -5,10 +9,15 @@
 }
 
 .navi_head {
+  background-color: #fff;
   width: 100%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
+  position: fixed;
+  z-index: 1;
+  height: 60px;
+  top: 0;
+  justify-content: space-around;
   padding: 20px 135px;
 }
 
@@ -22,9 +31,28 @@
   height: 16px;
 }
 
+.navi_container {
+  display: flex;
+  text-align: right;
+}
+
 .navi_list {
   display: flex;
+  margin-left: auto;
+  margin-right: 84px;
   gap: 42px;
+}
+.navi_list a {
+  color: #000;
+  position: relative;
+}
+.navi_list a:hover::before, .navi_list a:first-child::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  background-color: #000;
 }
 .navi_list .navi_list_item {
   font-family: "Lato", sans-serif;
@@ -112,6 +140,7 @@ picture {
   display: flex;
   flex-direction: column;
   margin-top: 90px;
+  margin-bottom: 85px;
 }
 
 .head_wrapper {
@@ -126,8 +155,15 @@ picture {
 
 .first_post {
   display: flex;
+  width: 33.333%;
   flex-direction: column;
-  justify-content: center;
+}
+.first_post.popular {
+  width: 50%;
+}
+.first_post .picture_wrapper {
+  padding-bottom: 25px;
+  box-sizing: border-box;
 }
 
 .post_text_section {
@@ -136,7 +172,12 @@ picture {
   font-size: 16px;
   color: var(--grey-700, #565656);
 }
-.post_text_section span {
+.post_text_section .little_text_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.post_text_section .little_text_wrapper span {
   color: var(--grey-500, #7B7B7B);
   font-size: 12px;
 }
@@ -145,6 +186,7 @@ picture {
   font-size: 22px;
   font-weight: 500;
   color: #000;
+  padding-bottom: 20px;
 }
 
 button {
@@ -153,8 +195,9 @@ button {
   width: auto;
   color: #fff;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   font-family: "Lato", sans-serif;
+  text-transform: capitalize;
 }
 
 .load {
@@ -164,25 +207,94 @@ button {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 90px;
+  border: none;
+}
+
+.head_wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.head_wrapper .posts_head {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+.head_wrapper .little_text {
+  color: var(--grey-500, #7B7B7B);
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.head_wrapper .only_h_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.head_wrapper h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+}
+.head_wrapper .only_span_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.head_wrapper .only_span_wrapper span, .head_wrapper .only_span_wrapper p {
+  font-family: "Lato", sans-serif;
+  color: var(--grey-700, #565656);
+  font-size: 19px;
+  font-weight: 400;
+}
+
+.only_text_head, .only_span_wrapper {
+  max-width: 470px;
+}
+
+footer {
+  background-color: var(--grey-100, #F4F4F4);
+  margin-top: 90px;
+  padding: 70px 0 30px;
 }
 
 .footer_wrapper {
-  margin-top: 90px;
-  background-color: var(--grey-100, #F4F4F4);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+}
+
+.text_wrapper h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+.text_wrapper p {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .icon_wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 23px;
 }
 
 .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
+  width: 50px;
+  height: 50px;
   background-color: #fff;
   border: 1px solid var(--grey-700, #565656);
+  cursor: pointer;
+}
+.icon:hover {
+  background-color: var(--grey-700, #565656);
+  --social:#fff;
 }
 .icon svg {
   width: 24px;
@@ -194,4 +306,22 @@ button {
 }
 .icon .twitter {
   width: 30px;
+}
+
+.arrow {
+  width: 34px;
+  height: 12px;
+  padding-left: 10px;
+}
+.arrow.last {
+  padding: 0;
+}
+
+.footer_copyright {
+  display: flex;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 20px;
 }
