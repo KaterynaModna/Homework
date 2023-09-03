@@ -16,19 +16,23 @@ body {
     margin: 0 auto;
     display: flex;
     position: fixed;
-    z-index: 1;
     height: 60px;
     top: 0;
     justify-content: space-around;
     padding: 20px 135px;
+    z-index: 3;
 }
 .navi_logo_item{
     width: 142px;
     height: 12px;
+    position: relative;
+    z-index: 5;
 }
 .navi_search_item{
     width:18px;
     height:16px;
+    position: relative;
+    z-index: 5;
 }
 .navi_container{
     display: flex;
@@ -303,4 +307,55 @@ width: 30px;
     font-size: 12px;
     font-weight: 400;
     margin-top: 20px;
+}
+@media (max-width: 767px){
+    .header_burger{
+        display: inline-block;
+        position: relative;
+        margin-left: 40px;
+        width: 34px;
+        height: 20px;
+        position: relative;
+        z-index: 5;
+        span{
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top:9px;
+        }
+    }
+    .header_burger::before, .header_burger::after{
+        content: '';
+        background-color: #000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        right: 0;
+    }
+    .header_burger::before{
+        top: 0;
+    }
+    .header_burger::after{
+        bottom:0;
+    }
+
+.nav_content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #755555;
+    padding: 70px 0 0 0;
+    z-index: 2;
+}
+.navi_list{
+    display: inline-block;
+    margin-right: 0;
+    .navi_list_item{
+        padding: 20px 10px;
+    }
+}
 }

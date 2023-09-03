@@ -20,6 +20,7 @@
             <svg class="navi_logo_item">
                 <use id="logo" xlink:href="./assets/sprite.svg#logo" />
             </svg>
+            <div class="nav_content">
             <ul class="navi_list">
                <a href="#" class="a_home"> <li class="navi_list_item">
                     home
@@ -37,9 +38,13 @@
                     contact
                 </li></a>
             </ul>
+        </div>
             <svg class="navi_search_item">
                 <use id="search" xlink:href="./assets/sprite.svg#search" />
             </svg>
+            <div class="header_burger">
+                <span></span>
+            </div>
         </div>
     </header>
     <main>
@@ -310,6 +315,13 @@
     <p class="footer_copyright">© Copyright Manifest Theme. Allrights reserved</p>
 </div>
     </footer>
+
+    <script>
+        function toggleMenu(){
+            document.querySelector('.nav_content').classList.toggle('active');
+            document.querySelector('.nav_content').classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
