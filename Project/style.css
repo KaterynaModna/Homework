@@ -9,6 +9,7 @@
   background: linear-gradient(45deg, #486BFE 0%, #486BFE 35%, #5373FD 35%, #5373FD 100%);
   transition: all 0.3s ease-in-out;
   width: max-content;
+  cursor: pointer;
 }
 
 .explore {
@@ -22,6 +23,7 @@
   background: linear-gradient(45deg, #486BFE 0%, #486BFE 35%, #5373FD 35%, #5373FD 100%);
   transition: all 0.3s ease-in-out;
   width: max-content;
+  cursor: pointer;
 }
 
 .book {
@@ -35,6 +37,7 @@
   background: linear-gradient(45deg, #486BFE 0%, #486BFE 35%, #5373FD 35%, #5373FD 100%);
   transition: all 0.3s ease-in-out;
   width: max-content;
+  cursor: pointer;
 }
 
 html,
@@ -59,6 +62,23 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 320px) {
+  .background {
+    background: url(img/header_background_mobile.webp);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .background {
+    background: url(img/header_background_tablet.webp);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .background {
+    background: url(img/header_background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .container {
@@ -173,10 +193,35 @@ nav {
   font-weight: 700;
 }
 
+.navi_list_item {
+  flex-wrap: wrap;
+}
+
 .why_background {
   background: url(img/why_background.webp);
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media screen and (min-width: 320px) {
+  .why_background {
+    background: url(img/why_background_mobile.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .why_background {
+    background: url(img/why_background_tablet.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .why_background {
+    background: url(img/why_background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .why_content_wrapper {
@@ -210,7 +255,12 @@ nav {
 }
 
 .why_image_wrapper {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 200px;
 }
 .why_image_wrapper .first_img {
   padding-right: 76px;
