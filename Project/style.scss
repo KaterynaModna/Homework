@@ -55,18 +55,6 @@ body {
     min-height: 100vh;
     justify-content: center;
     align-items:center;
-    @media screen and (min-width: 320px){
-        background: url(img/header_background_mobile.webp);
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        background: url(img/header_background_tablet.webp);
-    }
-    @media screen and (min-width: 1200px){
-        background: url(img/header_background.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
 }
 
 .container {
@@ -186,32 +174,13 @@ nav {
         }
     }
 }
-.navi_list_item{
-    flex-wrap: wrap;
-}
+
 
 .why_background {
     background: url(img/why_background.webp);
     background-repeat: no-repeat;
     background-size: cover;
-    
-    @media screen and (min-width: 320px){
-        background: url(img/why_background_mobile.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1199px){
-        background: url(img/why_background_tablet.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    @media screen and (min-width: 1200px){
-        background: url(img/why_background.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    }
+}
 
 .why_content_wrapper {
     display: flex;
@@ -311,11 +280,10 @@ svg{
 .spain_first_text,.spain_second_text{
     display: flex;
     flex-direction: column;
-    padding: 220px 672px 120px 0;
+    padding: 220px 0 120px ;
+    max-width: fit-content;
 }
-.spain_second_text{
-    padding: 220px 0 120px 672px;
-}
+
 .spain_text_wrapper{
     background: rgba(35, 35, 35, 0.90);
     padding: 44px 32px;

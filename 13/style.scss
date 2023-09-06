@@ -3,7 +3,7 @@ $hot:'Red Hat Display',sans-serif;
 $light_grey:var(--grey-500, #7B7B7B);
 $dark_grey: var(--grey-700, #565656);
 body {
-    padding-top: 60px; 
+    padding-top: 60px;
 }
 .container{
     width: 90%;
@@ -344,12 +344,15 @@ width: 30px;
 .nav_content{
     position: fixed;
     top: 0;
-    left: 0;
-    width: 100%;
+    right: -100%;
+    width: 80%;
     height: 100%;
     background-color: #755555;
     padding: 70px 0 0 0;
     z-index: 2;
+    &.active{
+        right: 0;
+    }
 }
 .navi_list{
     display: inline-block;
