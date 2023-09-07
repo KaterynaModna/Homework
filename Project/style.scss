@@ -198,17 +198,39 @@ svg {
     position: relative;
 }
 .skroll_wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     position: absolute;
     bottom: 0;
     margin-bottom: 120px;
-    animation-name: shevron;
-    animation-duration: 1.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: shevron;
+            animation-name: shevron;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: 1.5s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
+}
+@-webkit-keyframes shevron{
+    0%{
+        margin-bottom: 120px;
+    }
+    50%{
+        margin-bottom: 110px;
+    }
+    100%{
+        margin-bottom: 120px;
+    }
 }
 @keyframes shevron{
     0%{
