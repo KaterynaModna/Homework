@@ -105,7 +105,7 @@
                 </div>
             </div>
         </section>
-        <div class="sprite">
+        <section class="sprite">
             <div class="container">
                 <div class="sprite_content_wrapper">
                     <div class="special_item">
@@ -133,7 +133,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+            </section>
         <section class="spain_first">
             <div class="spain_first_back">
                 <div class="container">
@@ -265,6 +265,23 @@
       hamburger.classList.remove("active");
       navMenu.classList.remove("active");
     }
+
+    const sectionNav = document.querySelector('.section_nav');
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > lastScrollTop) {
+        sectionNav.style.position = 'fixed';
+        sectionNav.style.top = '0';
+    } else {
+        sectionNav.style.position = 'relative';
+        sectionNav.style.top = 'auto';
+    }
+
+    lastScrollTop = scrollTop;
+});
   </script>
 </body>
 
