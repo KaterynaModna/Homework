@@ -49,6 +49,9 @@
                     <svg class="navi_logo_item">
                         <use id="logo" xlink:href="./assets/sprite.svg#logo" />
                     </svg>
+                    <div class="nav_burger">
+                        <span></span>
+                    </div>
                     <div class="nav_content">
                         <ul class="navi_list">
                             <a href="#" class="a_home">
@@ -134,6 +137,7 @@
         <section class="spain_first">
             <div class="spain_first_back">
                 <div class="container">
+                    <div class="spain_first_everything_wrapper">
                     <div class="spain_first_text">
                         <div class="spain_text_wrapper">
                             <p class="spain_upper_text">Spain</p>
@@ -144,6 +148,7 @@
                                 complete account of the system</p>
                             <button class="book">book now</button>
                         </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,6 +156,7 @@
         <section class="spain_second">
             <div class="spain_second_back">
                 <div class="container">
+                    <div class="spain_second_everything_wrapper">
                     <div class="spain_second_text">
                         <div class="spain_text_wrapper">
                             <p class="spain_upper_text">Spain</p>
@@ -160,6 +166,7 @@
                                 denouncing pleasure and praising pain was account born and I account will give you a
                                 complete account of the system</p>
                             <button class="book">book now</button>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -241,6 +248,24 @@
 </div>
 </div>
 </footer>
+<script>
+    const hamburger = document.querySelector(".nav_burger");
+    const navMenu = document.querySelector(".nav_content");
+    const navLink = document.querySelectorAll(".navi_list_item");
+
+    hamburger.addEventListener("click", mobileMenu);
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function mobileMenu() {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    function closeMenu() {
+      hamburger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
 </body>
 
 </html>

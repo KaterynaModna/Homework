@@ -14,6 +14,8 @@ $dark_grey:#333333;
     }
 
     color: #fff;
+    letter-spacing: 1.4px;
+    line-height: 20px;
     border: none;
     padding: $padding;
     text-transform: uppercase;
@@ -30,15 +32,17 @@ $dark_grey:#333333;
 .explore {
     @include button(20px 32px)
 }
-.book{
+
+.book {
     @include button(20px 57px)
 }
+
 html,
 body {
     height: 100%;
     color: #fff;
     background-color: #000;
-    font-family:'Aleo', serif;
+    font-family: 'Aleo', serif;
 }
 
 .wrapper {
@@ -54,7 +58,7 @@ body {
     display: flex;
     min-height: 100vh;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
 .container {
@@ -126,14 +130,18 @@ svg {
         width: 163px;
         height: 20px;
     }
-    &.search_sp,  &.check, &.thumbs{
+
+    &.search_sp,
+    &.check,
+    &.thumbs {
         width: 64px;
         height: 64px;
         border: 48px;
         background: var(--Dark-Grey, #333);
         position: relative;
     }
-    &.quote{
+
+    &.quote {
         width: 20px;
         height: 20px;
     }
@@ -142,8 +150,10 @@ svg {
 .skroll_wrapper {
     margin-top: 6em;
 }
+
 nav {
     background-color: $accent_color;
+   
 }
 
 .section_nav {
@@ -168,7 +178,7 @@ nav {
         font-weight: 400;
         text-transform: uppercase;
 
-        &:hover {
+        &:hover, &:focus {
             background-color: $accent_darker;
             font-weight: 700;
         }
@@ -186,8 +196,9 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 124px 112px 124px 0;
-    gap:136px;
+    flex-wrap: wrap;
+    padding: 124px 0 124px 0;
+    gap: 136px;
 }
 
 .why_text_wrapper {
@@ -200,94 +211,118 @@ nav {
         font-size: 36px;
         font-weight: 400;
     }
-    .why_main_text, .why_main_text_2{
+
+    .why_main_text,
+    .why_main_text_2 {
         font-family: $josefin;
         font-size: 16px;
         font-weight: 300;
-        line-height: 28px; 
+        line-height: 28px;
         letter-spacing: 1.6px;
         margin-bottom: 32px;
     }
-    .why_main_text{
+
+    .why_main_text {
         margin-top: 24px;
     }
 
 }
+
 .why_image_wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
     min-width: 200px;
-    .first_img{
-       padding-right: 76px;
-       margin-bottom: 16px; 
+
+    .first_img {
+        padding-right: 76px;
+        margin-bottom: 16px;
     }
-    .second_img{
-        padding-left: 76px; 
+
+    .second_img {
+        padding-left: 76px;
     }
 }
-.sprite{
+
+.sprite {
     background-color: $dark_grey;
     padding: 107px 0 60px;
     position: relative;
-    
+
 }
-.sprite_content_wrapper{
+
+.sprite_content_wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
 }
-.content_wrapper_item{
+
+.content_wrapper_item {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 15px;
 }
-.special_item{
+
+.special_item {
     position: absolute;
-    top: 25%; 
-    left: 50%; 
+    top: 25%;
+    left: 50%;
     transform: translate(-50%, -25%);
-svg{
-    width: 872px;
-    height: 90px;
+
+    svg {
+        width: 872px;
+        height: 90px;
+    }
 }
-}
-.content_wrapper_text{
+
+.content_wrapper_text {
     font-family: $aleo;
     font-size: 36px;
     font-weight: 400;
 }
-.spain_first_back{
+
+.spain_first_back {
     background: url(img/back_spain_1.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.spain_second_back{
+
+.spain_second_back {
     background: url(img/back_spain_2.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.tourist_back{
+
+.tourist_back {
     background: url(img/last_background.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
-.spain_first_text,.spain_second_text{
+.spain_first_everything_wrapper{
+    display: flex;
+    justify-content: flex-start;
+}
+.spain_second_everything_wrapper{
+    display: flex;
+    justify-content: flex-end;
+}
+.spain_first_text,
+.spain_second_text {
     display: flex;
     flex-direction: column;
-    padding: 220px 0 120px ;
+    padding: 220px 0 120px;
     max-width: fit-content;
 }
 
-.spain_text_wrapper{
+.spain_text_wrapper {
     background: rgba(35, 35, 35, 0.90);
     padding: 44px 32px;
-    h5{
+
+    h5 {
         font-family: $josefin;
         font-size: 20px;
         font-weight: 400;
@@ -296,15 +331,17 @@ svg{
         margin: 16px 0;
     }
 }
-.spain_upper_text{
+
+.spain_upper_text {
     font-family: $josefin;
     font-size: 20px;
     font-weight: 300;
-    line-height: 28px; 
+    line-height: 28px;
     letter-spacing: 2px;
     opacity: 0.7;
 }
-.spain_main_text{
+
+.spain_main_text {
     max-width: 584px;
     font-family: $josefin;
     font-size: 16px;
@@ -315,18 +352,20 @@ svg{
     margin-bottom: 24px;
 }
 
-.tourist_content{
+.tourist_content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.tourist_super_wrapper{
+
+.tourist_super_wrapper {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
-.tourist_content_header{
+
+.tourist_content_header {
     font-family: $aleo;
     font-size: 36px;
     font-weight: 400;
@@ -334,14 +373,16 @@ svg{
     text-transform: capitalize;
     margin-bottom: 60px;
 }
-.tourist_content_wrapper{
+
+.tourist_content_wrapper {
     background: $dark_grey;
     display: flex;
     justify-content: center;
     flex-direction: column;
     max-width: 885px;
     padding: 48px 65px 48px 60px;
-    .tourist_head_text{
+
+    .tourist_head_text {
         font-family: $josefin;
         font-size: 20px;
         font-weight: 400;
@@ -350,29 +391,35 @@ svg{
         margin-bottom: 16px;
     }
 }
-.tourist_main_text{
+
+.tourist_main_text {
     font-family: $josefin;
     font-size: 16px;
     font-weight: 300;
     line-height: 28px;
     letter-spacing: 1.6px;
 }
-.tourist_container_wrapper{
+
+.tourist_container_wrapper {
     display: flex;
     justify-content: center;
     padding: 120px 0 180px 0;
 }
-footer{
+
+footer {
     background-color: #000;
 }
-.footer_wrapper{
+
+.footer_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 80px 0;
 }
-.footer_text, .scroll_text{
+
+.footer_text,
+.scroll_text {
     font-family: $josefin;
     font-size: 14px;
     font-weight: 400;
@@ -380,34 +427,328 @@ footer{
     letter-spacing: 2.8px;
     text-transform: capitalize;
 }
-.footer_icons{
+
+.footer_icons {
     display: flex;
-    gap:32px;
+    gap: 32px;
 }
-.facebook{
+
+.facebook {
     width: 20px;
     height: 32px;
 }
-.twitter{
+
+.twitter {
     width: 32px;
     height: 32px;
 }
-.linkedin{
+
+.linkedin {
     width: 28px;
     height: 32px;
 }
-.youtube{
+
+.youtube {
     width: 36px;
     height: 32px;
 }
-.pinterest{
+
+.pinterest {
     width: 31px;
     height: 32px;
 }
-.footer_text{
+
+.footer_text {
     margin-top: 8px;
     margin-bottom: 20px;
 }
-.footer_icons_item:hover, .footer_icons_item:focus{
-    --social:#5373FD;
+
+.footer_icons_item:hover,
+.footer_icons_item:focus {
+    --social: #5373FD;
+}
+// mobile first
+@media (max-width:560px) {
+
+    html,
+    body {
+        text-align: center;
+        align-items: center;
     }
+
+    .container {
+        max-width: none;
+    }
+// header
+.header_text_wrapper{
+    h1{
+        font-size: 40px;
+    }
+    .header_sub_head{
+        font-size:18px;
+    }
+}
+    .custom_input {
+        input {
+            width: 300px;
+            padding: 10px 0 10px 20px;
+            flex-direction: column;
+            height: 40px;
+        }
+    }
+
+    .search {
+        position: static;
+        width: 16rem;
+        display: inline-block;
+        margin-top: 10px;
+        opacity: 0.9;
+    }
+// why_sec
+    .why_image_wrapper {
+        gap: 40px;
+
+        .first_img,
+        .second_img {
+            padding: 0;
+        }
+    }
+
+    .why_text_wrapper {
+        align-items: center;
+    }
+// sprite_sec
+    .special_item {
+        display: none;
+    }
+
+    .sprite_content_wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .content_wrapper_text {
+        font-size: 26px;
+    }
+    // spain
+    .spain_first_text, .spain_second_text {
+    padding: 100px 0;
+}
+    // tourist_sec
+    .tourist_super_wrapper{
+        img{
+            display: none;
+        }
+    }
+    .tourist_content_wrapper{
+        border: 1px dashed #5373FD;
+    }
+    .tourist_main_text{
+        font-size: 14px;
+    }
+    .navi_logo_item{
+    position: relative;
+    z-index: 5;
+    }
+    .nav_burger{
+        display: inline-block;
+        margin-left: 40px;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 6;
+        span{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        top:9px;
+        }
+    }
+    .nav_burger::before, .nav_burger::after{
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        right: 4;
+    }
+    .nav_burger::before{
+        top: 0;
+    }
+    .nav_burger::after{
+        bottom:0;
+    }
+    .nav_content{
+        position: fixed;
+        top: 0;
+        width: 0;
+        height: 100%;
+        padding: 100px 0 0 0;
+        z-index: 2;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.9);
+        &.active{
+            right: 0;
+            width: 90%;
+            overflow:hidden;
+        }
+    }
+    .navi_list{
+        display: inline-block;
+        margin-right: 0;
+        .navi_list_item{
+            font-size: 20px;
+            padding:30px;
+            max-width: max-content;
+        }
+    }
+}
+
+
+
+@media (max-width:968px) {
+    .container {
+        max-width: 760px;
+    }
+    html,
+    body {
+        text-align: center;
+        align-items: center;
+    }
+
+// header
+.header_text_wrapper{
+    h1{
+        font-size: 40px;
+    }
+    .header_sub_head{
+        font-size:18px;
+    }
+}
+    .custom_input {
+        input {
+            width: 300px;
+            padding: 10px 0 10px 20px;
+            flex-direction: column;
+            height: 60px;
+        }
+    }
+
+    .search {
+        position: static;
+        display: inline-block;
+    }
+// why_sec
+.why_content_wrapper{
+    gap:80px;
+}
+
+
+    .why_text_wrapper {
+        align-items: center;
+    }
+// sprite_sec
+    .special_item {
+        display: none;
+    }
+
+    .sprite_content_wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .content_wrapper_text {
+        font-size: 26px;
+    }
+    // spain
+    .spain_first_text, .spain_second_text {
+    padding: 100px 0;
+}
+    // tourist_sec
+    .tourist_super_wrapper{
+        img{
+            display: none;
+        }
+    }
+    .tourist_content_wrapper{
+        border: 1px dashed #5373FD;
+    }
+    .tourist_main_text{
+        font-size: 14px;
+    }
+    .navi_logo_item{
+        position: relative;
+        z-index: 5;
+        }
+        .nav_burger{
+            display: inline-block;
+            margin-left: 40px;
+            width: 30px;
+            height: 20px;
+            position: relative;
+            z-index: 6;
+            span{
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            top:9px;
+            }
+        }
+        .nav_burger::before, .nav_burger::after{
+            content: '';
+            background-color: #fff;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            right: 4;
+        }
+        .nav_burger::before{
+            top: 0;
+        }
+        .nav_burger::after{
+            bottom:0;
+        }
+        .nav_content{
+            position: fixed;
+            top: 0;
+            width: 0;
+            height: 100%;
+            padding: 100px 0 0 0;
+            z-index: 2;
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.9);
+            &.active{
+                right: 0;
+                width: 90%;
+                overflow:hidden;
+            }
+        }
+        .navi_list{
+            display: inline-block;
+            margin-right: 0;
+            .navi_list_item{
+                font-size: 30px;
+                padding:30px;
+                max-width: max-content;
+            }
+        }
+
+}
+
+@media (max-width:1280px) {
+    .container {
+        max-width: 1000px;
+    }
+}
+
+@media (min-width:1280px) {
+    .container {
+        max-width: 1440px;
+    }
+}

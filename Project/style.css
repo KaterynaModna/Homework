@@ -3,6 +3,8 @@
   font-size: 14px;
   font-weight: 400;
   color: #fff;
+  letter-spacing: 1.4px;
+  line-height: 20px;
   border: none;
   padding: 16px 24px;
   text-transform: uppercase;
@@ -17,6 +19,8 @@
   font-size: 14px;
   font-weight: 400;
   color: #fff;
+  letter-spacing: 1.4px;
+  line-height: 20px;
   border: none;
   padding: 20px 32px;
   text-transform: uppercase;
@@ -31,6 +35,8 @@
   font-size: 14px;
   font-weight: 400;
   color: #fff;
+  letter-spacing: 1.4px;
+  line-height: 20px;
   border: none;
   padding: 20px 57px;
   text-transform: uppercase;
@@ -171,7 +177,7 @@ nav {
   font-weight: 400;
   text-transform: uppercase;
 }
-.navi_list a:hover {
+.navi_list a:hover, .navi_list a:focus {
   background-color: #486BFE;
   font-weight: 700;
 }
@@ -186,7 +192,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 124px 112px 124px 0;
+  flex-wrap: wrap;
+  padding: 124px 0 124px 0;
   gap: 136px;
 }
 
@@ -200,7 +207,8 @@ nav {
   font-size: 36px;
   font-weight: 400;
 }
-.why_text_wrapper .why_main_text, .why_text_wrapper .why_main_text_2 {
+.why_text_wrapper .why_main_text,
+.why_text_wrapper .why_main_text_2 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -217,7 +225,6 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
   min-width: 200px;
 }
 .why_image_wrapper .first_img {
@@ -284,7 +291,18 @@ nav {
   background-size: cover;
 }
 
-.spain_first_text, .spain_second_text {
+.spain_first_everything_wrapper {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.spain_second_everything_wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.spain_first_text,
+.spain_second_text {
   display: flex;
   flex-direction: column;
   padding: 220px 0 120px;
@@ -389,7 +407,8 @@ footer {
   padding: 80px 0;
 }
 
-.footer_text, .scroll_text {
+.footer_text,
+.scroll_text {
   font-family: "Josefin Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -433,6 +452,291 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer_icons_item:hover, .footer_icons_item:focus {
-  --social:#5373FD;
+.footer_icons_item:hover,
+.footer_icons_item:focus {
+  --social: #5373FD;
+}
+
+@media (max-width: 560px) {
+  html,
+body {
+    text-align: center;
+    align-items: center;
+  }
+
+  .container {
+    max-width: none;
+  }
+
+  .header_text_wrapper h1 {
+    font-size: 40px;
+  }
+  .header_text_wrapper .header_sub_head {
+    font-size: 18px;
+  }
+
+  .custom_input input {
+    width: 300px;
+    padding: 10px 0 10px 20px;
+    flex-direction: column;
+    height: 40px;
+  }
+
+  .search {
+    position: static;
+    width: 16rem;
+    display: inline-block;
+    margin-top: 10px;
+    opacity: 0.9;
+  }
+
+  .why_image_wrapper {
+    gap: 40px;
+  }
+  .why_image_wrapper .first_img,
+.why_image_wrapper .second_img {
+    padding: 0;
+  }
+
+  .why_text_wrapper {
+    align-items: center;
+  }
+
+  .special_item {
+    display: none;
+  }
+
+  .sprite_content_wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .content_wrapper_text {
+    font-size: 26px;
+  }
+
+  .spain_first_text, .spain_second_text {
+    padding: 100px 0;
+  }
+
+  .tourist_super_wrapper img {
+    display: none;
+  }
+
+  .tourist_content_wrapper {
+    border: 1px dashed #5373FD;
+  }
+
+  .tourist_main_text {
+    font-size: 14px;
+  }
+
+  .navi_logo_item {
+    position: relative;
+    z-index: 5;
+  }
+
+  .nav_burger {
+    display: inline-block;
+    margin-left: 40px;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 6;
+  }
+  .nav_burger span {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+
+  .nav_burger::before, .nav_burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 4;
+  }
+
+  .nav_burger::before {
+    top: 0;
+  }
+
+  .nav_burger::after {
+    bottom: 0;
+  }
+
+  .nav_content {
+    position: fixed;
+    top: 0;
+    width: 0;
+    height: 100%;
+    padding: 100px 0 0 0;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .nav_content.active {
+    right: 0;
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .navi_list {
+    display: inline-block;
+    margin-right: 0;
+  }
+  .navi_list .navi_list_item {
+    font-size: 20px;
+    padding: 30px;
+    max-width: max-content;
+  }
+}
+@media (max-width: 968px) {
+  .container {
+    max-width: 760px;
+  }
+
+  html,
+body {
+    text-align: center;
+    align-items: center;
+  }
+
+  .header_text_wrapper h1 {
+    font-size: 40px;
+  }
+  .header_text_wrapper .header_sub_head {
+    font-size: 18px;
+  }
+
+  .custom_input input {
+    width: 300px;
+    padding: 10px 0 10px 20px;
+    flex-direction: column;
+    height: 60px;
+  }
+
+  .search {
+    position: static;
+    display: inline-block;
+  }
+
+  .why_content_wrapper {
+    gap: 80px;
+  }
+
+  .why_text_wrapper {
+    align-items: center;
+  }
+
+  .special_item {
+    display: none;
+  }
+
+  .sprite_content_wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .content_wrapper_text {
+    font-size: 26px;
+  }
+
+  .spain_first_text, .spain_second_text {
+    padding: 100px 0;
+  }
+
+  .tourist_super_wrapper img {
+    display: none;
+  }
+
+  .tourist_content_wrapper {
+    border: 1px dashed #5373FD;
+  }
+
+  .tourist_main_text {
+    font-size: 14px;
+  }
+
+  .navi_logo_item {
+    position: relative;
+    z-index: 5;
+  }
+
+  .nav_burger {
+    display: inline-block;
+    margin-left: 40px;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    z-index: 6;
+  }
+  .nav_burger span {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+  }
+
+  .nav_burger::before, .nav_burger::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    right: 4;
+  }
+
+  .nav_burger::before {
+    top: 0;
+  }
+
+  .nav_burger::after {
+    bottom: 0;
+  }
+
+  .nav_content {
+    position: fixed;
+    top: 0;
+    width: 0;
+    height: 100%;
+    padding: 100px 0 0 0;
+    z-index: 2;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  .nav_content.active {
+    right: 0;
+    width: 90%;
+    overflow: hidden;
+  }
+
+  .navi_list {
+    display: inline-block;
+    margin-right: 0;
+  }
+  .navi_list .navi_list_item {
+    font-size: 30px;
+    padding: 30px;
+    max-width: max-content;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1440px;
+  }
 }
