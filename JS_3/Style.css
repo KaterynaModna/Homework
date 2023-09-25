@@ -20,6 +20,16 @@ html, body {
   margin-top: 20px;
 }
 
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  margin: 2em;
+}
+
 .button {
   font-family: "Aleo", sans-serif;
   font-size: 14px;

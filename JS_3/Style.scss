@@ -43,6 +43,15 @@ html, body{
     align-items: center;
     margin-top: 20px;
 }
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: $josefin;
+    color: #fff;
+    margin: 2em;
+}
 .button{
 @include button(16px 24px)
 }
