@@ -1,0 +1,47 @@
+html, body {
+  font-family: "Aleo", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #333333;
+}
+
+.container {
+  max-width: 1440px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.button_wrapper {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  margin: 2em;
+}
+
+.button {
+  font-family: "Aleo", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  letter-spacing: 1.4px;
+  line-height: 20px;
+  border: none;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  background: linear-gradient(45deg, #486BFE 0%, #486BFE 35%, #5373FD 35%, #5373FD 100%);
+  transition: all 0.3s ease-in-out;
+  width: max-content;
+  cursor: pointer;
+}
