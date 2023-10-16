@@ -1,50 +1,50 @@
-// let car = {
-// manufacturer: "Volkswagen",
-// model: "Golf",
-// year: 2022,
-// averageSpeed: 180,
-// fuel: 50,
-// averageFuel: 5.5
-// };
-// function isValueOutput() {
-// console.log(car);
+let car = {
+manufacturer: "Volkswagen",
+model: "Golf",
+year: 2022,
+averageSpeed: 180,
+fuel: 50,
+averageFuel: 5.5
+};
+function isValueOutput() {
+console.log(car);
 
-// car.name = "Oleg";
-// console.log(car);
+car.name = "Oleg";
+console.log(car);
 
-// if ('name' in car){
-//     console.log("item in object");
-// } else{
-//     console.log("item is not in object");
-// }
-// }
-// function isNewTime() {
-// const distance = parseFloat(prompt('Введіть відстань яку бажаєте проїхати'));
+if ('name' in car){
+    console.log("item in object");
+} else{
+    console.log("item is not in object");
+}
+}
+function isNewTime() {
+const distance = parseFloat(prompt('Введіть відстань яку бажаєте проїхати'));
 
-// if (isNaN (distance)){
-//     return false
-// }
-// const quantityFuel = ((car.averageFuel/100)*distance).toFixed(1);
-// console.log( `${quantityFuel} - це кількість палива`);
-// let time = (distance / car.averageSpeed).toFixed(1);
-// console.log(`${time} - це час без відпочинку для водія`);
+if (isNaN (distance)){
+    return false
+}
+const quantityFuel = ((car.averageFuel/100)*distance).toFixed(1);
+console.log( `${quantityFuel} - це кількість палива`);
+let time = (distance / car.averageSpeed).toFixed(1);
+console.log(`${time} - це час без відпочинку для водія`);
 
-// let intervalsPassed = Math.floor(time / 4);
-// let newTime = parseFloat(time) + intervalsPassed;
+let intervalsPassed = Math.floor(time / 4);
+let newTime = parseFloat(time) + intervalsPassed;
 
-// if (distance%720===0){
-//     newTime--
-// }
+if (distance%720===0){
+    newTime--
+}
 
-// console.log( `${newTime} - це необхідний час для подолання відстані враховуючи відпочинок`);
-// }
+console.log( `${newTime} - це необхідний час для подолання відстані враховуючи відпочинок`);
+}
 
 let time = {
     hours: 10,
     minutes: 21,
     seconds: 30
 }
-
+function ourTime(){
 function showTime(obj){
 console.log(`hours:${obj.hours}, minutes:${obj.minutes}, seconds:${obj.seconds}`);
 }
@@ -73,5 +73,5 @@ function addSeconds(obj, sec = +prompt('Додайте секунди')){
 }
 addSeconds(time)
 showTime(time)
-
+}
 
