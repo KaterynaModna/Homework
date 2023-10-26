@@ -6,7 +6,7 @@
 html, body{
     font-family: 'Open Sans', sans-serif;
 }
-ul, ol{
+ul, ol, li{
     list-style-type: none;
 }
 img{

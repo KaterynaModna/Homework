@@ -1,0 +1,57 @@
+.container{
+        width: 90%;
+        max-width: 1440px;
+        min-width: 300px;
+        margin: 0 auto;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:antiquewhite;
+    height: 100vh;
+    background-image: url(./wolk.jpg);
+    background-size: cover;
+}
+// .wrapper{
+//     background-image: url(./wolk.jpg);
+//     background-size: cover;
+// }
+.header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+main{
+width: 100%;
+text-align: center;
+padding: 40px 30px;
+background-color: #fff;
+border-radius: 10px;
+}
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    font-size: 40px;
+    background-color: #a1a0a0;
+}
+.text_quote{
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 30px;
+    font-weight: 400;
+}
+button{
+    margin-top: 20px;
+    padding: 15px 10px;
+    background-color: #a1a0a05e;
+    color: #000000;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.btn canvas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
